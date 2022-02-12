@@ -20,9 +20,8 @@ public class PhysicsObject : MonoBehaviour
     Mesh mesh;
     Rigidbody rig;
 
-    public static float TotalObjects;
-    public static float TotalDestroyedObjects;
-    public static float PercentDestroyed = TotalDestroyedObjects / TotalObjects;
+    public static float TotalObjects = 0;
+    public static float TotalDestroyedObjects = 0;
 
     private void Awake()
     {
@@ -44,7 +43,7 @@ public class PhysicsObject : MonoBehaviour
         maxHealth = size;
         currentHealth = maxHealth;
 
-        scoreValue = Mathf.RoundToInt(size * 10) * 10;
+        scoreValue = Mathf.RoundToInt(Mathf.Sqrt(size) * 10) * 10;
 
         healthBarObject = Instantiate(HealthBarPrefab, GetComponent<Renderer>().bounds.center, Quaternion.identity, transform);
         healthBar = healthBarObject.GetComponentInChildren<Image>();
@@ -54,7 +53,7 @@ public class PhysicsObject : MonoBehaviour
     public void TakeDamage(float damage)
     {
         healthBarObject.SetActive(true);
-        currentHealth -= damage / size;
+        currentHealth -= damage / Mathf.Sqrt(size);
         healthBar.fillAmount = currentHealth / maxHealth;
 
         if(currentHealth <= 0)
@@ -65,7 +64,7 @@ public class PhysicsObject : MonoBehaviour
 
     public void AddForce(Vector3 forceToAdd)
     {
-        rig.AddForce(forceToAdd / size, ForceMode.Force);
+        rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(size)), ForceMode.Force);
     }
 
     void Destroy()
