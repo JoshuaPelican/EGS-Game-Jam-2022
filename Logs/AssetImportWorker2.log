@@ -745,3 +745,841 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006219 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.749 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1750ms)
+		BeginReloadAssembly (237ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1367ms)
+			LoadAssemblies (233ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (366ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (696ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (451ms)
+				ProcessInitializeOnLoadMethodAttributes (94ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4957 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (309.9 KB). Loaded Objects now: 5627.
+Memory consumption went from 201.6 MB to 201.3 MB.
+Total: 6.985400 ms (FindLiveObjects: 0.712000 ms CreateObjectMapping: 0.523800 ms MarkObjects: 5.610600 ms  DeleteObjects: 0.137300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006998 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.855 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1856ms)
+		BeginReloadAssembly (266ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1422ms)
+			LoadAssemblies (194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (397ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (721ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (97ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4957 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (309.9 KB). Loaded Objects now: 5629.
+Memory consumption went from 201.4 MB to 201.1 MB.
+Total: 7.168900 ms (FindLiveObjects: 1.168200 ms CreateObjectMapping: 0.800700 ms MarkObjects: 5.089600 ms  DeleteObjects: 0.108600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1942.968535 seconds.
+  path: Assets/Variables/Score.asset
+  artifactKey: Guid(4e83a1dae92847c4195c67f1e74a96fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Variables/Score.asset using Guid(4e83a1dae92847c4195c67f1e74a96fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fcae628d2d059805e8214057df42b3') in 0.027232 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005805 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\EGS\GameJam2022\EGS-Game-Jam-2022\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.773 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1774ms)
+		BeginReloadAssembly (237ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1388ms)
+			LoadAssemblies (194ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (372ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (733ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (483ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4957 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (309.9 KB). Loaded Objects now: 5631.
+Memory consumption went from 201.6 MB to 201.3 MB.
+Total: 6.202000 ms (FindLiveObjects: 0.716900 ms CreateObjectMapping: 0.809000 ms MarkObjects: 4.535500 ms  DeleteObjects: 0.138200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 190.538939 seconds.
+  path: Assets/PolygonCity/Prefabs/Environments/SM_Env_Fence_01.prefab
+  artifactKey: Guid(cc10ce20cd2faea4ca8cb6505e5861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Environments/SM_Env_Fence_01.prefab using Guid(cc10ce20cd2faea4ca8cb6505e5861d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130e690c699ab1839cdd61e6aaba49fd') in 0.297225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.289976 seconds.
+  path: Assets/PolygonCity/Prefabs/Environments/SM_Env_Tree_01.prefab
+  artifactKey: Guid(ee6af68a3d2c1864ebc6cfc3be82d851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Environments/SM_Env_Tree_01.prefab using Guid(ee6af68a3d2c1864ebc6cfc3be82d851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26798d5c7259a3db504559c14aee75e3') in 0.051256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.842338 seconds.
+  path: Assets/PolygonCity/Prefabs/Props
+  artifactKey: Guid(751ea0a08bbc3464f8e24ff62c367789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props using Guid(751ea0a08bbc3464f8e24ff62c367789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4a7789f3016c6fc6262aad87c83c46') in 0.011050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.057226 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Aircon_01.prefab
+  artifactKey: Guid(015249c005381134e896458eb3ed0bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Aircon_01.prefab using Guid(015249c005381134e896458eb3ed0bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a925269f55476ba0e7f73dbaedfc60') in 0.054563 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_BusStop_01.prefab
+  artifactKey: Guid(02569c08ab29ca94481dbec225d65225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_BusStop_01.prefab using Guid(02569c08ab29ca94481dbec225d65225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8aa234fef217a22f907208097e07eb6') in 0.049628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Guitar_01.prefab
+  artifactKey: Guid(e853eadc5f7696b45a865c55959f923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Guitar_01.prefab using Guid(e853eadc5f7696b45a865c55959f923b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f089b5e48200b5a0740d65f8f9e624ff') in 0.048413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Taco_01.prefab
+  artifactKey: Guid(fe6f11fc019ec62418161c178bc03c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Taco_01.prefab using Guid(fe6f11fc019ec62418161c178bc03c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fd926358b3963fae28a40e6a0be3ca') in 0.040477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_01.prefab
+  artifactKey: Guid(cba063d2715f7a345b1c64609f0e864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_01.prefab using Guid(cba063d2715f7a345b1c64609f0e864e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f9c0de190f2a6ec92548217f614558') in 0.036683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Light_Attachment_01.prefab
+  artifactKey: Guid(855a9894cbcf2e246902c190dc1e5a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Light_Attachment_01.prefab using Guid(855a9894cbcf2e246902c190dc1e5a4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dde5222ff6974c8e20372880a567a8') in 0.039159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Pole_01.prefab
+  artifactKey: Guid(41f97a49a9daacd4cb2f4f15f3b4a822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Pole_01.prefab using Guid(41f97a49a9daacd4cb2f4f15f3b4a822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c8dc96da1b090d6cabd37c7b68fe303') in 0.046284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Pizza_01.prefab
+  artifactKey: Guid(eba1f7ece2536204bb30cc7ab64ae8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Pizza_01.prefab using Guid(eba1f7ece2536204bb30cc7ab64ae8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f20a8b65151501bf391508520ba0ae17') in 0.040911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_03.prefab
+  artifactKey: Guid(0aec61f3a3bdb4a438a673a2ab728ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_03.prefab using Guid(0aec61f3a3bdb4a438a673a2ab728ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15590d5c2683f7e2fe0ce3cee604ca99') in 0.046955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Door_01.prefab
+  artifactKey: Guid(47455669544a7614fb1944943e4fdcbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Door_01.prefab using Guid(47455669544a7614fb1944943e4fdcbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7832b9ab27c32cabb521dd80d165fd') in 0.043769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Popcorn_01.prefab
+  artifactKey: Guid(44cce66fc039e314183f60c57567cd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Popcorn_01.prefab using Guid(44cce66fc039e314183f60c57567cd3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379d3a354ec0e13a1f0037c8e0068595') in 0.044320 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_BowlingBall_01.prefab
+  artifactKey: Guid(d01d785db09ea5f43a99f45228e63817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_BowlingBall_01.prefab using Guid(d01d785db09ea5f43a99f45228e63817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac521d5fdbd7b839f8e138fbf0732a08') in 0.041493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_01.prefab
+  artifactKey: Guid(87c2df8e665f8664e932718fcf85c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_01.prefab using Guid(87c2df8e665f8664e932718fcf85c0b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb396ebf74a5c3a086d9d7991f594c28') in 0.042297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_06.prefab
+  artifactKey: Guid(f7538ab1dc37c8e49b7d76fd462c53eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_06.prefab using Guid(f7538ab1dc37c8e49b7d76fd462c53eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b15a10dfed4dc7149a64a880621b5f3') in 0.036406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_07.prefab
+  artifactKey: Guid(a2a53a2e1585ac7439ff035b5b626d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_07.prefab using Guid(a2a53a2e1585ac7439ff035b5b626d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94f69dd3722e156c6666f8bc661d7f6') in 0.034413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Couch_01.prefab
+  artifactKey: Guid(e74203ea62daad341816376fb141a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Couch_01.prefab using Guid(e74203ea62daad341816376fb141a8b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9519ca1a7da018c7c43cd8cb1d5e5a5') in 0.044346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Roof_01.prefab
+  artifactKey: Guid(046554645d66bc8439c25da40928ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Roof_01.prefab using Guid(046554645d66bc8439c25da40928ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a431a2a79f388cb36bd1794de1a114b') in 0.040285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_02.prefab
+  artifactKey: Guid(017a6f5ce43f6d74ca746ed804873917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Billboard_Sign_02.prefab using Guid(017a6f5ce43f6d74ca746ed804873917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bd6e289dc12bfc152ac91c5dd4011f') in 0.034926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Door_02.prefab
+  artifactKey: Guid(ad06d608909e4f4419a1cdc20452fccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Door_02.prefab using Guid(ad06d608909e4f4419a1cdc20452fccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac1939ef7513e4c5724a8ac9ba2324c1') in 0.042585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_HotdogStand_01.prefab
+  artifactKey: Guid(dcf86cbc986e8ca40a2bfa2fff49fc0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_HotdogStand_01.prefab using Guid(dcf86cbc986e8ca40a2bfa2fff49fc0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756dcc4e264fdd78d9ad6659ed6ef03a') in 0.040836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_02.prefab
+  artifactKey: Guid(e4e5d2f7f155681449aca26cbdb2b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_CardboardBox_02.prefab using Guid(e4e5d2f7f155681449aca26cbdb2b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deab6af4d5519bcedacd14dd9dea5793') in 0.042219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Bottle_01.prefab
+  artifactKey: Guid(4f96f6be8b901eb4c80c229856393703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LargeSign_Bottle_01.prefab using Guid(4f96f6be8b901eb4c80c229856393703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba780c48431ff928e907672e8631227') in 0.041609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.858937 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_Arm_01.prefab
+  artifactKey: Guid(f43449709203fee4f94622bc446866d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_Arm_01.prefab using Guid(f43449709203fee4f94622bc446866d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6518e310d0868276b2c6d86bfc2afd47') in 0.047026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_Lights_02.prefab
+  artifactKey: Guid(6702d719a0fd01142ab7529f2a36d350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_Lights_02.prefab using Guid(6702d719a0fd01142ab7529f2a36d350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d45a23a344dd7964b47afa233b5a4a') in 0.049405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Mailbox_01.prefab
+  artifactKey: Guid(17fd2c85588a1954eb295a34c9775577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Mailbox_01.prefab using Guid(17fd2c85588a1954eb295a34c9775577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba79b1258020e5f22c8ccef14cae918') in 0.047096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Manhole_01.prefab
+  artifactKey: Guid(17d89c35d4de1e34faab77de25282d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Manhole_01.prefab using Guid(17d89c35d4de1e34faab77de25282d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39638cf0ed8066b2a591968eca080612') in 0.047800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_CrossLights_01.prefab
+  artifactKey: Guid(de28d3c05ec6bbd4c8b527fa38906983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_LightPole_CrossLights_01.prefab using Guid(de28d3c05ec6bbd4c8b527fa38906983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337cd0053b945bedec584b85ab1bbf60') in 0.050292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.810018 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Newspaper_01.prefab
+  artifactKey: Guid(d0a449419dc6e404d94d5081fa710767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Newspaper_01.prefab using Guid(d0a449419dc6e404d94d5081fa710767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5bc2bcf55fb7dbc34428bb96beade3') in 0.051727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Pallet_01.prefab
+  artifactKey: Guid(21dcc5f62e503f0438b4e490cdd00d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Pallet_01.prefab using Guid(21dcc5f62e503f0438b4e490cdd00d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843cfb2b45c3ce5e96c80569cda2c2e4') in 0.052598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_ParkingMeter_02.prefab
+  artifactKey: Guid(94a7e311b5cf22f4898fa342bfef126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_ParkingMeter_02.prefab using Guid(94a7e311b5cf22f4898fa342bfef126e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5535440336d47b2fa7c166bf5cf12c1') in 0.049460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Paper_03.prefab
+  artifactKey: Guid(97d18204e4538e64f9bdf47d8db7c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Paper_03.prefab using Guid(97d18204e4538e64f9bdf47d8db7c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa36deed66dae236e9bae346c5cfcdb1') in 0.050500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_ParkBench_01.prefab
+  artifactKey: Guid(29c6f824a8087b549a0a0b68c7810a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_ParkBench_01.prefab using Guid(29c6f824a8087b549a0a0b68c7810a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9790875d21e00dc502c2988ecd9cf9c') in 0.042485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.983403 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Phones_01.prefab
+  artifactKey: Guid(521c305b3d17bc149affb6c1f1016889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Phones_01.prefab using Guid(521c305b3d17bc149affb6c1f1016889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16df970dcdf07bd270f63d7623c40ef8') in 0.048037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Preset_02.prefab
+  artifactKey: Guid(b27d14e37eec12a46a31852986a1fd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Preset_02.prefab using Guid(b27d14e37eec12a46a31852986a1fd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3365683c0e94635abdcba49699ed59c5') in 0.056770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Small_01.prefab
+  artifactKey: Guid(4af8e3852964a684f83e8632aa1b0201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Small_01.prefab using Guid(4af8e3852964a684f83e8632aa1b0201) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15fd063b7724c20f548be5da9a5918ea') in 0.051037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Preset_03.prefab
+  artifactKey: Guid(95e6ac9cb6c498d4fb94b42d4800fd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Preset_03.prefab using Guid(95e6ac9cb6c498d4fb94b42d4800fd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af69ffd754bbd29de7cfdaa3bd0fc74') in 0.057145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Small_02.prefab
+  artifactKey: Guid(6b111b417178e844b8625eaff49aa98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Pipe_Small_02.prefab using Guid(6b111b417178e844b8625eaff49aa98d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3643d58133333b342081732e47c701b') in 0.048550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.995807 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Planter_01.prefab
+  artifactKey: Guid(79d39b0d041480b479fb5cc05284aa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Planter_01.prefab using Guid(79d39b0d041480b479fb5cc05284aa87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87535f34a08c70df160a0a45d62ce98') in 0.053341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_03.prefab
+  artifactKey: Guid(5effb8bc646e1944d8634dea5e1a9096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_03.prefab using Guid(5effb8bc646e1944d8634dea5e1a9096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d026170cceb6596b1e3188311476d58') in 0.042680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_PlanterWindow_02.prefab
+  artifactKey: Guid(385e440e39a69044bbd3453c1caa8158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_PlanterWindow_02.prefab using Guid(385e440e39a69044bbd3453c1caa8158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffec59865ee293a6c67bbb8a3af3b36a') in 0.043069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Roof_Aircon_01.prefab
+  artifactKey: Guid(a154b407aa4395c40925726c816c3770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Roof_Aircon_01.prefab using Guid(a154b407aa4395c40925726c816c3770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1760f1b35195ed12e162c795d6960f65') in 0.042075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Roof_Aircon_02.prefab
+  artifactKey: Guid(b59c8a025baab13498254afa5eb8b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Roof_Aircon_02.prefab using Guid(b59c8a025baab13498254afa5eb8b18d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa7342926d22bab02971ca5e1273890') in 0.049160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_SatDish_01.prefab
+  artifactKey: Guid(7518e6d86c572544cb2f51453141465f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_SatDish_01.prefab using Guid(7518e6d86c572544cb2f51453141465f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b2c36b429ed471ed30ae28e6ae7dc0') in 0.039703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_SecurityCamera_01.prefab
+  artifactKey: Guid(804b4d4621262c6449916edf7614a719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_SecurityCamera_01.prefab using Guid(804b4d4621262c6449916edf7614a719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a61aa70e497792e3a0c685c5c622df2') in 0.041325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_02.prefab
+  artifactKey: Guid(c99eeb7bcbfd04041a72322e1dbdb2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_02.prefab using Guid(c99eeb7bcbfd04041a72322e1dbdb2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f4a9948b5d0f99d87d6fa1cc95f5ba') in 0.042794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_Frame_01.prefab
+  artifactKey: Guid(675b73d883444064fb48c1dd46a03c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Poster_Frame_01.prefab using Guid(675b73d883444064fb48c1dd46a03c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5194b18fd1185729532363046705f084') in 0.050382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_PotPlant_01.prefab
+  artifactKey: Guid(aab301b5d4a9c1b4ab55351b46f6be40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_PotPlant_01.prefab using Guid(aab301b5d4a9c1b4ab55351b46f6be40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a718776b7cf24aa0f56544fc6adaf2') in 0.035319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.348907 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Chair_01.prefab
+  artifactKey: Guid(f710382517201604d939dd1e30c50b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Chair_01.prefab using Guid(f710382517201604d939dd1e30c50b66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd98d2dae54e1934478f26598ebeb6b') in 0.064774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Shelf_04.prefab
+  artifactKey: Guid(a182c2a01d7be784e853dd2ecbed570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Shelf_04.prefab using Guid(a182c2a01d7be784e853dd2ecbed570e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30212d9c3f350632e931ed9eb5601d7c') in 0.055440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Display_02.prefab
+  artifactKey: Guid(2ea7292a3363b0648a35e02467d8ef1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_ShopInterior_Display_02.prefab using Guid(2ea7292a3363b0648a35e02467d8ef1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070dd764cd984f372dc7071fabe58a91') in 0.056290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.124787 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sidewalk_Panel_02.prefab
+  artifactKey: Guid(f5d836287b731654889d5c887015e410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sidewalk_Panel_02.prefab using Guid(f5d836287b731654889d5c887015e410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3a4ee97b9486f1234d791d79d8bfb9') in 0.051746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Arrow_01.prefab
+  artifactKey: Guid(d5ff5bf0c6b69b44db782ab5fcee2d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Arrow_01.prefab using Guid(d5ff5bf0c6b69b44db782ab5fcee2d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1918debb526bf95f3ce1a7057a76a4df') in 0.048099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Attachment_01.prefab
+  artifactKey: Guid(5e3dc10a50a37434c9c2c84315d7df53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Attachment_01.prefab using Guid(5e3dc10a50a37434c9c2c84315d7df53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ebd89a4d236874aae8ebfab85a51db') in 0.038342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_SidewalkPoles_02.prefab
+  artifactKey: Guid(e6ccfb8197490404a970f0ff1b00c564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_SidewalkPoles_02.prefab using Guid(e6ccfb8197490404a970f0ff1b00c564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8c5bb4436bf37a108e2ca244962c43') in 0.038308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.597237 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Barber_01.prefab
+  artifactKey: Guid(6f13e404c814e8d4aa20a5f3d4469109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Barber_01.prefab using Guid(6f13e404c814e8d4aa20a5f3d4469109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce038ace52ab85efa9697cc075b37bcf') in 0.062087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_FireDepartment_01.prefab
+  artifactKey: Guid(e0b066ef9ae5aff40b5acc9933c1aae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_FireDepartment_01.prefab using Guid(e0b066ef9ae5aff40b5acc9933c1aae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b47d4b971c9cf0b0166785b6205bbc') in 0.056591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_GiveWay_02.prefab
+  artifactKey: Guid(3981e9a3a73407b4aa6e431af799d57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_GiveWay_02.prefab using Guid(3981e9a3a73407b4aa6e431af799d57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809c50bb374a39c61d89caaf48732ccb') in 0.047793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Chinese_Noodles_01.prefab
+  artifactKey: Guid(90c0a56a209107741bf91676c89abea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Chinese_Noodles_01.prefab using Guid(90c0a56a209107741bf91676c89abea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe9bbe56c6eee8773d1c7f398773cc6') in 0.037798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.747359 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Hotel_01.prefab
+  artifactKey: Guid(15dc232cd3fb7284497126cd68dc7ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Hotel_01.prefab using Guid(15dc232cd3fb7284497126cd68dc7ba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caeba73cfc0ceb61980ddb403ee18a89') in 0.068749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Skip_01.prefab
+  artifactKey: Guid(7a686972998735e4e8e9cedda7f0bc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Skip_01.prefab using Guid(7a686972998735e4e8e9cedda7f0bc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6646ab0374dd1ef850e5771d251bb302') in 0.061778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Police_01.prefab
+  artifactKey: Guid(fcaf22b5c144e454493120cd8c59fc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Sign_Police_01.prefab using Guid(fcaf22b5c144e454493120cd8c59fc81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eebd778874a623b362ce4570f4a2b70') in 0.044805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.207507 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Skip_02.prefab
+  artifactKey: Guid(180ae0328a9b63d4ca285487efd1305a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Skip_02.prefab using Guid(180ae0328a9b63d4ca285487efd1305a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd36a1b558a544bd13500650dcb0d23c4') in 0.067681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Table_02.prefab
+  artifactKey: Guid(24785933d7ceaad4a800f09511c371db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Table_02.prefab using Guid(24785933d7ceaad4a800f09511c371db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cddc93830ff2bec2d214daeab02cf3') in 0.050526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_TrafficLight_03.prefab
+  artifactKey: Guid(f535db8b221d73a4abbe7062e1624a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_TrafficLight_03.prefab using Guid(f535db8b221d73a4abbe7062e1624a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85684edb043a1a5b2fe8349df2430fd') in 0.046250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Soda_03.prefab
+  artifactKey: Guid(8d24d6976965f01469593d7f8d11c0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Soda_03.prefab using Guid(8d24d6976965f01469593d7f8d11c0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd195cc02c0e3a88a9ac7468d6fd1e46c') in 0.035890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.682670 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_TrashBag_02.prefab
+  artifactKey: Guid(70a4fe26c99cdd645b53ab796679e200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_TrashBag_02.prefab using Guid(70a4fe26c99cdd645b53ab796679e200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '900bf9db3d9c49654fb3a39bf9e9df2a') in 0.056975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Exhaust_01.prefab
+  artifactKey: Guid(e43280ef66994c74f925cf8a64e966ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Exhaust_01.prefab using Guid(e43280ef66994c74f925cf8a64e966ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1aceb3aeb76d9e05bfebe32cd26752') in 0.050573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Washingline_01.prefab
+  artifactKey: Guid(e51407a0809d1584ba21208f0acb453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Washingline_01.prefab using Guid(e51407a0809d1584ba21208f0acb453f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a044737c3e640c9836c46f3dc2013ad4') in 0.043639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Trashbin_02.prefab
+  artifactKey: Guid(e1cc26c508a6ec34e95a50f62aa7b3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Trashbin_02.prefab using Guid(e1cc26c508a6ec34e95a50f62aa7b3df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4d4d7b327ec03e9cff1384e4f4b3a6') in 0.042457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_TrashCan_Lid_01.prefab
+  artifactKey: Guid(34805116d018a9f4899f8ec1bb2948b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_TrashCan_Lid_01.prefab using Guid(34805116d018a9f4899f8ec1bb2948b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243bcd518837258353d26dfb959561b2') in 0.040319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Straight_01.prefab
+  artifactKey: Guid(4fa42fc4cca532640a6592f05bb6414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Straight_01.prefab using Guid(4fa42fc4cca532640a6592f05bb6414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f4d37ebf270380c47918539af07750') in 0.042987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Wide_01.prefab
+  artifactKey: Guid(08821b2a98c69864da45f4b353ee5bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Props/SM_Prop_Vents_Wide_01.prefab using Guid(08821b2a98c69864da45f4b353ee5bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a385b508b16730c5689fbec13a9619') in 0.047407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 273.568842 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_01.prefab
+  artifactKey: Guid(9384e4f7925dd0d47a003b910f826bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_01.prefab using Guid(9384e4f7925dd0d47a003b910f826bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c115a2906e4f0b47ff29c42d97ef82c0') in 0.057057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab
+  artifactKey: Guid(c828aad58e045884d9bcabfcdacc69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Door_01.prefab using Guid(c828aad58e045884d9bcabfcdacc69fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac914d938e50b11671ea98beb933e38') in 0.048114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stairs_Planter_02.prefab
+  artifactKey: Guid(625b05b65035a0f4bb8d99f542a308b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stairs_Planter_02.prefab using Guid(625b05b65035a0f4bb8d99f542a308b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff86b8873496bae488aa3c1a21513d0d') in 0.039624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_FireEscape_01.prefab
+  artifactKey: Guid(a0fc9668797c0ba40bfd0a39fc67f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_FireEscape_01.prefab using Guid(a0fc9668797c0ba40bfd0a39fc67f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a6d53c569bd2196b019e1595c7e6e8') in 0.039607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Roof_01.prefab
+  artifactKey: Guid(6c5cf72eed364734aa359fd03de15100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Roof_01.prefab using Guid(6c5cf72eed364734aa359fd03de15100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3bd6587cf5ec41a343740114591bb2') in 0.039671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Roof_01.prefab
+  artifactKey: Guid(177d8df2567c2ee43897cd6b253d28d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Roof_01.prefab using Guid(177d8df2567c2ee43897cd6b253d28d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407002b4c9c1d4e92440b8bb7437d6bb') in 0.037508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab
+  artifactKey: Guid(c498c5a0f7820b142b3b929366f2cf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stack_01.prefab using Guid(c498c5a0f7820b142b3b929366f2cf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4133ded6dc36ae2df4ee9e2a472e43a3') in 0.037712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Floor_01.prefab
+  artifactKey: Guid(5a2b75022dd651041bbc17957152287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Floor_01.prefab using Guid(5a2b75022dd651041bbc17957152287a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f1e01d1427999578f5ee00888cb2a2') in 0.038423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Base_01.prefab
+  artifactKey: Guid(a5aca9c9ef39b0a49835b3ee43077679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOctagon_Base_01.prefab using Guid(a5aca9c9ef39b0a49835b3ee43077679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc770173f65283e63b67175910f4fd75') in 0.042177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Cover_02.prefab
+  artifactKey: Guid(dae920b906a2e674c910a0f58756c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Cover_02.prefab using Guid(dae920b906a2e674c910a0f58756c14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07cf5f617e1d521db3eed36c49ea6d0') in 0.041020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stairs_03.prefab
+  artifactKey: Guid(e554fc2e32c92274e92a501e72f5db1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Stairs_03.prefab using Guid(e554fc2e32c92274e92a501e72f5db1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eec2cd57931be2021e01ff276918354') in 0.043785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab
+  artifactKey: Guid(4617dc66e78dfbc42bd97ab7b9d077cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Roof_Corner_01.prefab using Guid(4617dc66e78dfbc42bd97ab7b9d077cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a3e6d449fbd76f9a5c43603d9d3b21') in 0.038605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Cover_01.prefab
+  artifactKey: Guid(e83fcfbcf26241c449483ad6639aed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Cover_01.prefab using Guid(e83fcfbcf26241c449483ad6639aed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a006497fe2be48738a5e7af6967bfc5') in 0.039011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Large_Base_01.prefab
+  artifactKey: Guid(1e50d3afa90bae147b9b80844d27728c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Large_Base_01.prefab using Guid(1e50d3afa90bae147b9b80844d27728c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2270059a4edea3e3ada96499f090aca7') in 0.035952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_03.prefab
+  artifactKey: Guid(87e255ee7b2544c45a73880dc218dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_03.prefab using Guid(87e255ee7b2544c45a73880dc218dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580091b964f85309e86f8bab7f8f091d') in 0.039848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Roof_01.prefab
+  artifactKey: Guid(d247508df54d35440b771820202bc30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Roof_01.prefab using Guid(d247508df54d35440b771820202bc30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e79d5455155b81c1c49fa39d29a20d9') in 0.039881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Floor_01.prefab
+  artifactKey: Guid(4290c366a38253b4f87a53b8a3654483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Floor_01.prefab using Guid(4290c366a38253b4f87a53b8a3654483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9003272836c6cede593b280226877988') in 0.042226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab
+  artifactKey: Guid(105b953fd34734b40bb42cee7100a6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Door_Corner_01.prefab using Guid(105b953fd34734b40bb42cee7100a6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7ed015ee9ea0b6b965bb9985bfcca5') in 0.040822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Base_01.prefab
+  artifactKey: Guid(95640d38768b9f44bbf39ed3421ec759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Small_Base_01.prefab using Guid(95640d38768b9f44bbf39ed3421ec759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e8df719b698aa18c2723a3405ee0e9') in 0.045524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Large_02.prefab
+  artifactKey: Guid(62cc7a41de7e4c847869440070e2f6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeOld_Large_02.prefab using Guid(62cc7a41de7e4c847869440070e2f6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb13f1a4b2b2f1e14bd293f156008f42') in 0.039729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_FireEscape_02.prefab
+  artifactKey: Guid(530c04ec7ccbeec44b8c9e6f3c681679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_FireEscape_02.prefab using Guid(530c04ec7ccbeec44b8c9e6f3c681679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa93b1dc0ea52359ac34b2869784124') in 0.034094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab
+  artifactKey: Guid(c1d46775cc1dffd41859257aad55f33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Apartment_Corner_03.prefab using Guid(c1d46775cc1dffd41859257aad55f33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852ffa8e907d67b9e390ff025ec9f924') in 0.038387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015471 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeRound_01.prefab
+  artifactKey: Guid(54c86e934c1824f46a2a8955ea57091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeRound_01.prefab using Guid(54c86e934c1824f46a2a8955ea57091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49da9a619539325f96e759f629a64d68') in 0.044202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_04.prefab
+  artifactKey: Guid(464552aa0e0766d47a6df340d469df57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_04.prefab using Guid(464552aa0e0766d47a6df340d469df57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec71666325c0602a06050b8bb0d9fa3c') in 0.040946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_01.prefab
+  artifactKey: Guid(f70c8059d9b8d60429d824a17015ed49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_01.prefab using Guid(f70c8059d9b8d60429d824a17015ed49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6e17aeee038677345242be90edb792') in 0.039165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_Base_01.prefab
+  artifactKey: Guid(e2b1e7ce58c743c4d8d59a66eec6422b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeSquare_Base_01.prefab using Guid(e2b1e7ce58c743c4d8d59a66eec6422b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8ecc2b9e4afc9c8e002b794981b315') in 0.041673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeRound_04.prefab
+  artifactKey: Guid(57130355dd16ab04386646a2f8aac353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_OfficeRound_04.prefab using Guid(57130355dd16ab04386646a2f8aac353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484971b9840d5d09701034818fc2095b') in 0.040006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.030343 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Roof_Access_01.prefab
+  artifactKey: Guid(e97c4383dd13fb54fb98ecc4e4be2ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Roof_Access_01.prefab using Guid(e97c4383dd13fb54fb98ecc4e4be2ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026aabcde0c5518e1e5a276f8e16f2a4') in 0.049864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_06.prefab
+  artifactKey: Guid(1e70e6b05165f864f8c42dab5a2544f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_06.prefab using Guid(1e70e6b05165f864f8c42dab5a2544f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c6c1f3d4d211a5366ff33d94ca5dd0') in 0.044654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_04.prefab
+  artifactKey: Guid(6e1b6bb6069c8c446bf14668e5eda0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_04.prefab using Guid(6e1b6bb6069c8c446bf14668e5eda0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb96eef6c2b6335685b85d5731b3c29a') in 0.045325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_03.prefab
+  artifactKey: Guid(e390f42c7625c914e9082218b571c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_03.prefab using Guid(e390f42c7625c914e9082218b571c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c79bafa5cb89f3e0f91f107e47dd25') in 0.043146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Corner_01.prefab
+  artifactKey: Guid(ea45161d31d19c540af5f5091648f652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Corner_01.prefab using Guid(ea45161d31d19c540af5f5091648f652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c60fd47765f0f6b9b2d56c6895717c4') in 0.039011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.504814 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Cover_03.prefab
+  artifactKey: Guid(ea35cb37dd8ed464a813dd7e683a94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Cover_03.prefab using Guid(ea35cb37dd8ed464a813dd7e683a94b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5efc85e5d2ac8c11fae8a11b88a590') in 0.067640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Cover_05.prefab
+  artifactKey: Guid(2605f88d3a092824691ed33e21a760ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Bld_Shop_Cover_05.prefab using Guid(2605f88d3a092824691ed33e21a760ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3aa6f725adc1915a779724b826ad189') in 0.046091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/PolygonCity/Prefabs/Buildings/SM_Prop_Water_Tower_01.prefab
+  artifactKey: Guid(b1c9a178d3040a14aac77ac6bcbcc9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonCity/Prefabs/Buildings/SM_Prop_Water_Tower_01.prefab using Guid(b1c9a178d3040a14aac77ac6bcbcc9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8e59028b1b779e0f102a2f8a4eaa1d') in 0.044228 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
