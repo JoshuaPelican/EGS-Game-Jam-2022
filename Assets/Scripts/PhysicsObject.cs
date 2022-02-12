@@ -3,6 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsObject : MonoBehaviour
 {
+    [SerializeField] IntVariable ScoreVariable;
+
     //Object Values
     float maxHealth;
     float currentHealth;
@@ -14,6 +16,10 @@ public class PhysicsObject : MonoBehaviour
     Mesh mesh;
     Rigidbody rig;
 
+    public static float TotalObjects;
+    public static float TotalDestroyedObjects;
+    public static float PercentDestroyed = TotalDestroyedObjects / TotalObjects;
+
     private void Awake()
     {
         mesh = GetComponent<MeshFilter>().mesh;
@@ -24,6 +30,8 @@ public class PhysicsObject : MonoBehaviour
 
     void Initialize()
     {
+        TotalObjects++;
+
         rig.isKinematic = true;
 
         float area = mesh.bounds.size.x * mesh.bounds.size.y * mesh.bounds.size.z;
@@ -32,7 +40,7 @@ public class PhysicsObject : MonoBehaviour
         maxHealth = size;
         currentHealth = maxHealth;
 
-        scoreValue = Mathf.RoundToInt(size) * 100;
+        scoreValue = Mathf.RoundToInt(size * 10) * 10;
     }
 
     public void TakeDamage(float damage)
@@ -52,7 +60,8 @@ public class PhysicsObject : MonoBehaviour
 
     void Destroy()
     {
+        TotalDestroyedObjects++;
         rig.isKinematic = false;
-        ScoreManager.Instance.AddScore(scoreValue);
+        ScoreVariable.Value += scoreValue;
     }
 }
