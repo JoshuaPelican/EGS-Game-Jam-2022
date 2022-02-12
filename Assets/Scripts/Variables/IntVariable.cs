@@ -15,8 +15,8 @@ public class IntVariable : ScriptableObject
             if (value == _value)
                 return;
 
-            OnValueChanged?.Invoke();
             _value = value;
+            OnValueChanged?.Invoke();
         }
     }
 }

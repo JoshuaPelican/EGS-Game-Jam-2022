@@ -36,7 +36,9 @@ public class TornadoController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontal, 0, vertical) * Speed * Size * Time.deltaTime;
+
+        Vector3 direction = Vector3.ClampMagnitude(new Vector3(horizontal, 0, vertical), 1);
+        Vector3 movement =  direction * Speed * Size * Time.deltaTime;
 
         transform.position = Vector3.Slerp(transform.position, transform.position + movement, AccelerationSpeed);
     }
@@ -83,7 +85,7 @@ public class TornadoController : MonoBehaviour
         }
         else
         {
-            obj.TakeDamage(Damage * Size * Time.deltaTime);
+            obj.TakeDamage(Damage * Mathf.Pow(Size, 4) * Time.deltaTime);
         }
     }
 }

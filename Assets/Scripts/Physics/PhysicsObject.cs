@@ -1,9 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsObject : MonoBehaviour
 {
     [SerializeField] IntVariable ScoreVariable;
+    [SerializeField] GameObject HealthBarPrefab;
+    GameObject healthBarObject;
+    Image healthBar;
 
     //Object Values
     float maxHealth;
@@ -35,17 +39,23 @@ public class PhysicsObject : MonoBehaviour
         rig.isKinematic = true;
 
         float area = mesh.bounds.size.x * mesh.bounds.size.y * mesh.bounds.size.z;
-        size = Mathf.Sqrt(area);
+        size = area;
 
         maxHealth = size;
         currentHealth = maxHealth;
 
         scoreValue = Mathf.RoundToInt(size * 10) * 10;
+
+        healthBarObject = Instantiate(HealthBarPrefab, GetComponent<Renderer>().bounds.center, Quaternion.identity, transform);
+        healthBar = healthBarObject.GetComponentInChildren<Image>();
+        healthBarObject.SetActive(false);
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        healthBarObject.SetActive(true);
+        currentHealth -= damage / size;
+        healthBar.fillAmount = currentHealth / maxHealth;
 
         if(currentHealth <= 0)
         {
@@ -55,12 +65,13 @@ public class PhysicsObject : MonoBehaviour
 
     public void AddForce(Vector3 forceToAdd)
     {
-        rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(size)), ForceMode.Force);
+        rig.AddForce(forceToAdd / size, ForceMode.Force);
     }
 
     void Destroy()
     {
         TotalDestroyedObjects++;
+        Destroy(healthBarObject);
         rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;
     }

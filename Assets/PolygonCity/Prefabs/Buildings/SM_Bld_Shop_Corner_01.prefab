@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: 4e83a1dae92847c4195c67f1e74a96fb, type: 2}
+  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
 --- !u!1 &175494
 GameObject:
   m_ObjectHideFlags: 0
