@@ -6,6 +6,7 @@ public class TornadoController : MonoBehaviour
     [Header("Movement Settings")]
     [SerializeField] float Speed = 10;
     [SerializeField] [Range(0, 1)] float AccelerationSpeed = 0.5f;
+    [SerializeField] float MaxAreaRadius = 180f;
 
     [Header("Force Settings")]
     [SerializeField] float TowardsForce = 40;
@@ -41,6 +42,10 @@ public class TornadoController : MonoBehaviour
         Vector3 movement =  direction * Speed * Size * Time.deltaTime;
 
         transform.position = Vector3.Slerp(transform.position, transform.position + movement, AccelerationSpeed);
+        if (transform.position.magnitude > MaxAreaRadius)
+        {
+            transform.position = Vector3.Slerp(transform.position, transform.position - movement, AccelerationSpeed);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
