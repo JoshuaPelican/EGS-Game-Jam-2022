@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   TimerVariable: {fileID: 11400000, guid: d6cf32ca82aa67f4e8bef4ca379ef7f4, type: 2}
-  DestroyedPercentRequired: 0.95
+  DestroyedPercentRequired: 1
   TornadoPrefab: {fileID: 2138838207886850864, guid: 2968d184e6f6f0140acc9599917d054c, type: 3}
   MenuCam: {fileID: 5132242686673752600}
   EndPanel: {fileID: 0}
