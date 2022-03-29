@@ -13,9 +13,6 @@ public class TornadoController : MonoBehaviour
     [SerializeField] float PerpendicularForce = 15;
     [SerializeField] float UpForce = 30;
 
-    [Header("Damage Settings")]
-    [SerializeField] float Damage = 1;
-
     [Header("Score Settings")]
     [SerializeField] IntVariable ScoreVariable;
     [SerializeField] float ScoreSizeRatio = 0.0001f;
@@ -76,7 +73,7 @@ public class TornadoController : MonoBehaviour
 
     void AffectPhysicsObject(PhysicsObject obj)
     {
-        if (obj.IsDestroyed)
+        if (obj.isDestroyed)
         {
             Vector3 towardsTornado = (transform.position - obj.transform.position).normalized;
             Vector3 perpendicularToTornado = Vector3.Cross(towardsTornado, Vector3.up).normalized;
@@ -84,13 +81,14 @@ public class TornadoController : MonoBehaviour
 
             float distanceToTornado = Vector3.Distance(transform.position, obj.transform.position);
 
-            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, (distanceToTornado / col.bounds.extents.magnitude) * Size);
+            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, (distanceToTornado / obj.Size) * Size);
 
             obj.AddForce(proportionalTornadoForce);
+            Debug.Log("Force: " + proportionalTornadoForce);
         }
         else
         {
-            obj.TakeDamage(Damage * Mathf.Pow(Size, 4) * Time.deltaTime);
+            obj.CheckDestruction(Size);
         }
     }
 }

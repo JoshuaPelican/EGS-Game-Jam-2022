@@ -4,18 +4,14 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsObject : MonoBehaviour
 {
+    [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
-    [SerializeField] GameObject HealthBarPrefab;
-    GameObject healthBarObject;
-    Image healthBar;
 
-    //Object Values
-    float maxHealth;
-    float currentHealth;
-    float size;
+    public float Size { get { return area; } }
+    float area;
     int scoreValue;
 
-    public bool IsDestroyed { get { return currentHealth <= 0; } }
+    public bool isDestroyed = false;
     
     Mesh mesh;
     Rigidbody rig;
@@ -37,26 +33,19 @@ public class PhysicsObject : MonoBehaviour
 
         rig.isKinematic = true;
 
-        float area = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z);
-        size = area;
+        area = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z);
 
-        maxHealth = size;
-        currentHealth = maxHealth;
-
-        scoreValue = Mathf.RoundToInt(Mathf.Sqrt(size) * 10) * 10;
-
-        healthBarObject = Instantiate(HealthBarPrefab, GetComponent<Renderer>().bounds.center, Quaternion.identity, transform);
-        healthBar = healthBarObject.GetComponentInChildren<Image>();
-        healthBarObject.SetActive(false);
+        //Score Caluclation
+        scoreValue = Mathf.RoundToInt(Mathf.Sqrt(Size) * 10) * 10;
     }
 
-    public void TakeDamage(float damage)
+    public void CheckDestruction(float otherSize)
     {
-        healthBarObject.SetActive(true);
-        currentHealth -= damage / Mathf.Sqrt(size);
-        healthBar.fillAmount = currentHealth / maxHealth;
+        float scaledSize = otherSize;
 
-        if(currentHealth <= 0)
+        Debug.Log(scaledSize + " : " + Size);
+
+        if(scaledSize >= Size)
         {
             Destroy();
         }
@@ -64,13 +53,13 @@ public class PhysicsObject : MonoBehaviour
 
     public void AddForce(Vector3 forceToAdd)
     {
-        rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(size)), ForceMode.Force);
+        rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(Size)), ForceMode.Force);
     }
 
     void Destroy()
     {
+        isDestroyed = true;
         TotalDestroyedObjects++;
-        Destroy(healthBarObject);
         rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;
     }
