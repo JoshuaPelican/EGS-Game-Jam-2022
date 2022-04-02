@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 473768}
   - component: {fileID: 3353732}
   - component: {fileID: 2327272}
-  - component: {fileID: 64428188778724820}
   - component: {fileID: 2201259021538321954}
   - component: {fileID: 4235076638043153667}
+  - component: {fileID: -6030716135539540737}
   m_Layer: 0
   m_Name: SM_Prop_LargeSign_Lollypop_01
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64428188778724820
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 179348}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43749211744912768, guid: 3f0a72c9bcc950247baefef35d8e2ea3, type: 2}
 --- !u!54 &2201259021538321954
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,4 +115,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-6030716135539540737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.364575, y: 6.3604, z: 0.51181006}
+  m_Center: {x: -0.000000059604645, y: -0.00000047683716, z: -0.00000029802322}

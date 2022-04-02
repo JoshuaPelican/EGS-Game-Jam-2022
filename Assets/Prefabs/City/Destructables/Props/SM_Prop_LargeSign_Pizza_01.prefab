@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 437920}
   - component: {fileID: 3360368}
   - component: {fileID: 2303836}
-  - component: {fileID: 64737447779944764}
   - component: {fileID: 6386944409661191649}
   - component: {fileID: 4688649470964587043}
+  - component: {fileID: -4541598339503004456}
   m_Layer: 0
   m_Name: SM_Prop_LargeSign_Pizza_01
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64737447779944764
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152962}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43631956978108578, guid: bd6c708785e352645a97b47fe1c5ac2f, type: 2}
 --- !u!54 &6386944409661191649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,4 +115,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-4541598339503004456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3681688, y: 0.56194466, z: 2.9567347}
+  m_Center: {x: 0.0000014305115, y: 0.28097233, z: 0.0000042915344}

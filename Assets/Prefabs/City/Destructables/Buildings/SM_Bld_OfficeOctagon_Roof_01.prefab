@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 437984}
   - component: {fileID: 3395592}
   - component: {fileID: 2361742}
-  - component: {fileID: 64598270556925616}
   - component: {fileID: 5592508578178086675}
   - component: {fileID: 7365337497761856709}
+  - component: {fileID: -6056452399773660949}
   m_Layer: 0
   m_Name: SM_Bld_OfficeOctagon_Roof_01
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64598270556925616
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43372600083294652, guid: 6dace2e505ddb4949aa8ca5e75f488c0, type: 2}
 --- !u!54 &5592508578178086675
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,4 +115,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-6056452399773660949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.464767, y: 5.3815117, z: 20.464771}
+  m_Center: {x: 0, y: 2.6907558, z: -0.00000047683716}

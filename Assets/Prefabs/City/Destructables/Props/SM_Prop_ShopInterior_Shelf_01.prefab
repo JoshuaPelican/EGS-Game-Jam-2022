@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 416468}
   - component: {fileID: 3368842}
   - component: {fileID: 2327870}
-  - component: {fileID: 64797462154306034}
   - component: {fileID: 2239755270853220140}
   - component: {fileID: 4387981975219520522}
+  - component: {fileID: 7632573303056436365}
   m_Layer: 0
   m_Name: SM_Prop_ShopInterior_Shelf_01
   m_TagString: Untagged
@@ -87,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64797462154306034
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 146044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43935265459576120, guid: 96987ee2dbd0e78459a8f315bf40fea3, type: 2}
 --- !u!54 &2239755270853220140
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -130,4 +116,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &7632573303056436365
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5231476, y: 1.9261206, z: 0.8782301}
+  m_Center: {x: 0.0000076293945, y: 0.9630603, z: 0.004099831}

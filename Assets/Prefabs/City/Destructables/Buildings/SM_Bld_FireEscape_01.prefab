@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 468664}
   - component: {fileID: 3359940}
   - component: {fileID: 2352296}
-  - component: {fileID: 64597966673590742}
   - component: {fileID: 64789228297203020}
   - component: {fileID: 64547777225020932}
   - component: {fileID: 64758294733034300}
@@ -19,6 +18,7 @@ GameObject:
   - component: {fileID: 64332023166723226}
   - component: {fileID: 606643516903066425}
   - component: {fileID: -3953630542211626666}
+  - component: {fileID: -52913355374139810}
   m_Layer: 0
   m_Name: SM_Bld_FireEscape_01
   m_TagString: Untagged
@@ -91,20 +91,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64597966673590742
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178404}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43606325563392430, guid: ee43f819832333b4584b2bb95813f42b, type: 2}
 --- !u!64 &64789228297203020
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -204,4 +190,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-52913355374139810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.250983, y: 1.4920225, z: 1.6435442}
+  m_Center: {x: -1.6910609, y: 0.2134614, z: 0.8217721}

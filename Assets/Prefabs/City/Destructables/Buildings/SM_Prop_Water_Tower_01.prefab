@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 449616}
   - component: {fileID: 3306944}
   - component: {fileID: 2364110}
-  - component: {fileID: 64586552519621296}
   - component: {fileID: 64556447331118446}
   - component: {fileID: 7549660463188058932}
   - component: {fileID: -7081356046475354516}
+  - component: {fileID: 2821672835689753467}
   m_Layer: 0
   m_Name: SM_Prop_Water_Tower_01
   m_TagString: Untagged
@@ -87,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64586552519621296
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198202}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43048858028752432, guid: d49906f1cd194f54ba59e4e710513a77, type: 2}
 --- !u!64 &64556447331118446
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -144,4 +130,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &2821672835689753467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4195514, y: 5.5089116, z: 2.4194489}
+  m_Center: {x: 0, y: 2.7544558, z: 0}

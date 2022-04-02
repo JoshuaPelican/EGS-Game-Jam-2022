@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 418496}
   - component: {fileID: 3328404}
   - component: {fileID: 2331654}
-  - component: {fileID: 64728136012818212}
   - component: {fileID: 6558089961808506561}
   - component: {fileID: 1676653195356979913}
+  - component: {fileID: 983464731730032182}
   m_Layer: 0
   m_Name: SM_Prop_Sidewalk_Panel_03
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64728136012818212
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43399443526603696, guid: 24d80c4ac68ca5a4394cd5c672157033, type: 2}
 --- !u!54 &6558089961808506561
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,4 +115,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &983464731730032182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.51516724, y: 0.058110118, z: 0.51819515}
+  m_Center: {x: 0.0019226074, y: 0.029055059, z: -0.0034575462}

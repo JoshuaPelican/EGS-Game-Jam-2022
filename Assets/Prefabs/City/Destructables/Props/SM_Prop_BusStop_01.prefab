@@ -94,10 +94,10 @@ GameObject:
   - component: {fileID: 416874}
   - component: {fileID: 3375696}
   - component: {fileID: 2321158}
-  - component: {fileID: 64487217997239770}
   - component: {fileID: 64251002291232034}
   - component: {fileID: 8671189020885920963}
   - component: {fileID: -6034515565088956668}
+  - component: {fileID: 7246993843484546154}
   m_Layer: 0
   m_Name: SM_Prop_BusStop_01
   m_TagString: Untagged
@@ -171,20 +171,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64487217997239770
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194934}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43257271686295472, guid: b6790cc5d28edd94a965e002d8422428, type: 2}
 --- !u!64 &64251002291232034
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -228,4 +214,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &7246993843484546154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.511345, y: 3.0730693, z: 1.5709214}
+  m_Center: {x: 0, y: 1.5265418, z: -0.1311419}

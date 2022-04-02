@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 405034}
   - component: {fileID: 3306816}
   - component: {fileID: 2316626}
-  - component: {fileID: 64625089699612818}
   - component: {fileID: 1683732309770769989}
   - component: {fileID: 2152426769416958201}
+  - component: {fileID: 2014394316998766226}
   m_Layer: 0
   m_Name: SM_Prop_Pipe_Part_T_01
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64625089699612818
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193412}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43847668481176352, guid: f5d7e9f0dde50a24cbae4bf0a64cb9a1, type: 2}
 --- !u!54 &1683732309770769989
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,4 +115,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &2014394316998766226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0994205, y: 0.7503594, z: 0.41356832}
+  m_Center: {x: -0.5497103, y: 0.16839547, z: 0.15523109}

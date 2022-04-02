@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 496374}
   - component: {fileID: 3364370}
   - component: {fileID: 2385214}
-  - component: {fileID: 64565394641281448}
   - component: {fileID: 64831139739737914}
   - component: {fileID: 64661154842631092}
   - component: {fileID: 64159984482060036}
   - component: {fileID: 6025315804222419131}
   - component: {fileID: 3916939491843162758}
+  - component: {fileID: -2269695260543299535}
   m_Layer: 0
   m_Name: SM_Prop_Vents_Exhaust_01
   m_TagString: Untagged
@@ -89,20 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64565394641281448
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 117306}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43595487869680120, guid: d4df34b17804f4246af7d3144c71d2ee, type: 2}
 --- !u!64 &64831139739737914
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -174,4 +160,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-2269695260543299535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.86809826, y: 1.6302991, z: 2.726616}
+  m_Center: {x: -0.00000333786, y: 0.81514955, z: 1.363306}

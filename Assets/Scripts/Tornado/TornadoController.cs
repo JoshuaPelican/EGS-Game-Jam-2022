@@ -13,15 +13,13 @@ public class TornadoController : MonoBehaviour
     [SerializeField] float PerpendicularForce = 15;
     [SerializeField] float UpForce = 30;
 
-    [Header("Score Settings")]
+    [Header("Size Settings")]
     [SerializeField] IntVariable ScoreVariable;
     [SerializeField] float ScoreSizeRatio = 0.0001f;
-
 
     float Size { get { return Mathf.Sqrt((ScoreVariable.Value * ScoreSizeRatio) + 1); } }
 
     List<PhysicsObject> objectsInRange = new List<PhysicsObject>();
-
     Collider col;
 
     private void Start()
@@ -31,61 +29,81 @@ public class TornadoController : MonoBehaviour
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-
-        Vector3 direction = Vector3.ClampMagnitude(new Vector3(horizontal, 0, vertical), 1);
-        Vector3 movement =  direction * Speed * Size * Time.deltaTime;
-
-        transform.position = Vector3.Slerp(transform.position, transform.position + movement, AccelerationSpeed);
-        if (transform.position.magnitude > MaxAreaRadius)
-        {
-            transform.position = Vector3.Slerp(transform.position, transform.position - movement, AccelerationSpeed);
-        }
+        Vector3 direction = CalculateDirection();
+        Vector3 movement = CalculateMovement(direction);
+        ApplyMovement(movement);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.TryGetComponent(out PhysicsObject obj))
-        {
+        //Add object to the list
+        if (other.TryGetComponent(out PhysicsObject obj))
             objectsInRange.Add(obj);
-        }
     }
 
     private void FixedUpdate()
     {
+        //Scale size over time
         transform.localScale = Vector3.Lerp(transform.localScale,  Vector3.one * Size, 0.1f);
 
+        //Affect objects in the list
         foreach (PhysicsObject obj in objectsInRange)
-        {
-            AffectPhysicsObject(obj);
-        }
+            ApplyPhysics(obj);
     }
 
     private void OnTriggerExit(Collider other)
     {
+        //Remove object from the list
         if (other.TryGetComponent(out PhysicsObject obj))
-        {
             objectsInRange.Remove(obj);
-        }
     }
 
-    void AffectPhysicsObject(PhysicsObject obj)
+    Vector3 CalculateDirection()
     {
-        if (obj.isDestroyed)
+        //Input
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+
+        //Direction Calculation
+        return Vector3.ClampMagnitude(new Vector3(horizontal, 0, vertical), 1);
+    }
+
+    Vector3 CalculateMovement(Vector3 direction)
+    {
+        //Movement Calculation
+        return direction * Speed * Size * Time.deltaTime;
+    }
+
+    void ApplyMovement(Vector3 movement)
+    {
+        //Move the tornado according to movement
+        transform.position = Vector3.Slerp(transform.position, transform.position + movement, AccelerationSpeed);
+
+        //Check if the tornado is out of bounds, if it is then move it back
+        if (transform.position.magnitude > MaxAreaRadius)
+            transform.position = Vector3.Slerp(transform.position, transform.position - movement, AccelerationSpeed);
+    }
+
+    void ApplyPhysics(PhysicsObject obj)
+    {
+        //If object is destroyed then apply force to it
+        if (obj.IsDestroyed)
         {
+            //Force calculation
             Vector3 towardsTornado = (transform.position - obj.transform.position).normalized;
             Vector3 perpendicularToTornado = Vector3.Cross(towardsTornado, Vector3.up).normalized;
             Vector3 tornadoForce = (perpendicularToTornado * PerpendicularForce) + (towardsTornado * TowardsForce) + (Vector3.up * UpForce);
 
+            //Distance to object
             float distanceToTornado = Vector3.Distance(transform.position, obj.transform.position);
 
-            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, (distanceToTornado / obj.Size) * Size);
+            //Force proportional to object distance and tonado size
+            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, (distanceToTornado / col.bounds.extents.magnitude) * Size);
 
+            //Debug.Log("Force: " + proportionalTornadoForce);
             obj.AddForce(proportionalTornadoForce);
-            Debug.Log("Force: " + proportionalTornadoForce);
         }
+        //Otherwise check if it needs to be destroyed this frame
         else
         {
             obj.CheckDestruction(Size);

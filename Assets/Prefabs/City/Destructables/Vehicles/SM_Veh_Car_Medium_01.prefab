@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 469864}
   - component: {fileID: 3331630}
   - component: {fileID: 2377250}
-  - component: {fileID: 135581383845829418}
   m_Layer: 0
   m_Name: SM_Veh_Car_Medium_Wheel_fr
   m_TagString: Untagged
@@ -84,19 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &135581383845829418
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 111294}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41863042
-  m_Center: {x: 0.09229474, y: 0, z: 0}
 --- !u!1 &115500
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +94,6 @@ GameObject:
   - component: {fileID: 410608}
   - component: {fileID: 3307674}
   - component: {fileID: 2316170}
-  - component: {fileID: 135368434592265978}
   m_Layer: 0
   m_Name: SM_Veh_Car_Medium_Wheel_rl
   m_TagString: Untagged
@@ -181,19 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &135368434592265978
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115500}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41863042
-  m_Center: {x: -0.09229478, y: 0, z: 0}
 --- !u!1 &133744
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +260,6 @@ GameObject:
   - component: {fileID: 412088}
   - component: {fileID: 3350984}
   - component: {fileID: 2349334}
-  - component: {fileID: 135463858832770924}
   m_Layer: 0
   m_Name: SM_Veh_Car_Medium_Wheel_fl
   m_TagString: Untagged
@@ -361,19 +332,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &135463858832770924
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134320}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41863042
-  m_Center: {x: -0.09229474, y: 0, z: 0.000000044703484}
 --- !u!1 &157676
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +343,7 @@ GameObject:
   - component: {fileID: 477648}
   - component: {fileID: 3321018}
   - component: {fileID: 2324734}
-  - component: {fileID: 64472552564321622}
+  - component: {fileID: -2809604156349044600}
   - component: {fileID: -1278008933575663485}
   - component: {fileID: 7630495324796080443}
   m_Layer: 0
@@ -467,8 +425,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64472552564321622
-MeshCollider:
+--- !u!65 &-2809604156349044600
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -477,10 +435,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 9e3e05b5e4951d64a9412bf0e557e6d3, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.3655212, y: 1.6393872, z: 4.968236}
+  m_Center: {x: 0, y: 1.0645186, z: 0.041665196}
 --- !u!54 &-1278008933575663485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -510,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  isDestroyed: 0
 --- !u!1 &169676
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +645,6 @@ GameObject:
   - component: {fileID: 414136}
   - component: {fileID: 3334790}
   - component: {fileID: 2321010}
-  - component: {fileID: 135213672240390216}
   m_Layer: 0
   m_Name: SM_Veh_Car_Medium_Wheel_rr
   m_TagString: Untagged
@@ -761,16 +717,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &135213672240390216
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195896}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41863042
-  m_Center: {x: 0.092294686, y: 0, z: 0}

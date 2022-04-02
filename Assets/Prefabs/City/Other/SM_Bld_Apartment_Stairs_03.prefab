@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 471776}
   - component: {fileID: 3332870}
   - component: {fileID: 2346690}
-  - component: {fileID: 64622761241714796}
   - component: {fileID: 64599718429480082}
   - component: {fileID: 64026464148138246}
   - component: {fileID: 64828182711944432}
@@ -20,12 +19,13 @@ GameObject:
   - component: {fileID: 64111614885720738}
   - component: {fileID: 64833306655788988}
   - component: {fileID: 64682083406530566}
+  - component: {fileID: -6291785644850642508}
   m_Layer: 0
   m_Name: SM_Bld_Apartment_Stairs_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &471776
 Transform:
@@ -92,20 +92,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64622761241714796
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130316}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43356834551784760, guid: e55e9db328382ae44a063314822ccdf5, type: 2}
 --- !u!64 &64599718429480082
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -218,3 +204,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43620573760680752, guid: e55e9db328382ae44a063314822ccdf5, type: 2}
+--- !u!65 &-6291785644850642508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.0000076, y: 2.3867574, z: 5.5290813}
+  m_Center: {x: -2.5000038, y: -0.30662066, z: -2.7645407}

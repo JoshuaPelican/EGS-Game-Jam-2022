@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class LevelManager : MonoBehaviour
 {
     [SerializeField] IntVariable ScoreVariable;
     [SerializeField] IntVariable TimerVariable;

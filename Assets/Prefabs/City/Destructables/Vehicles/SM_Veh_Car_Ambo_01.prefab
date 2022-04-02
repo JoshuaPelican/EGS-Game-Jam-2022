@@ -565,9 +565,9 @@ GameObject:
   - component: {fileID: 463928}
   - component: {fileID: 3301166}
   - component: {fileID: 2303650}
-  - component: {fileID: 64087793075500760}
   - component: {fileID: -6335951642152691201}
   - component: {fileID: -792778602501402184}
+  - component: {fileID: -1183962001808041455}
   m_Layer: 0
   m_Name: SM_Veh_Car_Ambo_01
   m_TagString: Untagged
@@ -649,20 +649,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64087793075500760
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164098}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 916b5bf2becb29f46b894a059d247f38, type: 3}
 --- !u!54 &-6335951642152691201
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -692,7 +678,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-1183962001808041455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.472612, y: 2.3723326, z: 5.0940275}
+  m_Center: {x: 0, y: 1.396498, z: 0.13655901}
 --- !u!1 &174714
 GameObject:
   m_ObjectHideFlags: 0

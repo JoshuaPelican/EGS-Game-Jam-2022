@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 459288}
   - component: {fileID: 3364646}
   - component: {fileID: 2300480}
-  - component: {fileID: 64341942290185190}
   - component: {fileID: 64727388790175380}
   - component: {fileID: 64856509702005328}
   - component: {fileID: 64084451251330748}
   - component: {fileID: 2347819336855097979}
   - component: {fileID: 8506703061872629874}
+  - component: {fileID: -2002293912920476517}
   m_Layer: 0
   m_Name: SM_Prop_ShopInterior_Chair_01
   m_TagString: Untagged
@@ -89,20 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64341942290185190
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139926}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43743464397786214, guid: af59407df1c891742b908ffa0905eecd, type: 2}
 --- !u!64 &64727388790175380
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -174,4 +160,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &-2002293912920476517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49328613, y: 1.0474508, z: 0.58656883}
+  m_Center: {x: 0, y: 0.5237254, z: 0}

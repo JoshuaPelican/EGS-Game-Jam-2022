@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsObject : MonoBehaviour
@@ -7,11 +6,12 @@ public class PhysicsObject : MonoBehaviour
     [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
 
-    public float Size { get { return area; } }
-    float area;
-    int scoreValue;
+    public bool IsDestroyed = false;
 
-    public bool isDestroyed = false;
+    float size;
+    public float Size { get { return size; } }
+      
+    int scoreValue;
     
     Mesh mesh;
     Rigidbody rig;
@@ -33,7 +33,7 @@ public class PhysicsObject : MonoBehaviour
 
         rig.isKinematic = true;
 
-        area = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z);
+        size = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z);
 
         //Score Caluclation
         scoreValue = Mathf.RoundToInt(Mathf.Sqrt(Size) * 10) * 10;
@@ -41,7 +41,7 @@ public class PhysicsObject : MonoBehaviour
 
     public void CheckDestruction(float otherSize)
     {
-        float scaledSize = otherSize;
+        float scaledSize = otherSize * otherSize;
 
         Debug.Log(scaledSize + " : " + Size);
 
@@ -52,13 +52,14 @@ public class PhysicsObject : MonoBehaviour
     }
 
     public void AddForce(Vector3 forceToAdd)
-    {
+    {       
         rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(Size)), ForceMode.Force);
     }
 
     void Destroy()
     {
-        isDestroyed = true;
+        Debug.Log($"{name} was Destroyed!");
+        IsDestroyed = true;
         TotalDestroyedObjects++;
         rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;

@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 441798}
   - component: {fileID: 3399338}
   - component: {fileID: 2343824}
-  - component: {fileID: 64936961583060392}
-  - component: {fileID: 64351928507337730}
-  - component: {fileID: -647575969219681054}
-  - component: {fileID: 6712939330689079387}
+  - component: {fileID: 554310372}
+  - component: {fileID: 554310371}
+  - component: {fileID: 554310370}
   m_Layer: 0
   m_Name: SM_Prop_LightPole_Base_01
   m_TagString: Untagged
@@ -87,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64936961583060392
-MeshCollider:
+--- !u!65 &554310372
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,25 +96,10 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43932174653575212, guid: 237e8588bbe35e041a82f615f8718159, type: 2}
---- !u!64 &64351928507337730
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43391506149011906, guid: 237e8588bbe35e041a82f615f8718159, type: 2}
---- !u!54 &-647575969219681054
+  serializedVersion: 2
+  m_Size: {x: 0.34573564, y: 6.482998, z: 2.4787297}
+  m_Center: {x: -0.0000009536745, y: 3.241499, z: 1.0665}
+--- !u!54 &554310371
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6712939330689079387
+--- !u!114 &554310370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,4 +128,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0

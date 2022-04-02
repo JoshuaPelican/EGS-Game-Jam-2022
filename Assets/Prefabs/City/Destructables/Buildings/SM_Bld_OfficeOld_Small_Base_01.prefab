@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 482114}
   - component: {fileID: 3389804}
   - component: {fileID: 2396916}
-  - component: {fileID: 64887943440313132}
   - component: {fileID: 64329487900928986}
   - component: {fileID: 7440660596380976001}
   - component: {fileID: -2266785789641242845}
+  - component: {fileID: 8604678701247466279}
   m_Layer: 0
   m_Name: SM_Bld_OfficeOld_Small_Base_01
   m_TagString: Untagged
@@ -87,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64887943440313132
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103878}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43848771907746510, guid: b86cca9e28f0fc84fa9e0cef843289c1, type: 2}
 --- !u!64 &64329487900928986
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -144,4 +130,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  HealthBarPrefab: {fileID: 3396888744739135375, guid: 302850c207127ed40b90d258e0102d81, type: 3}
+  IsDestroyed: 0
+--- !u!65 &8604678701247466279
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.936111, y: 6, z: 10.936096}
+  m_Center: {x: -5, y: 3, z: -5}
