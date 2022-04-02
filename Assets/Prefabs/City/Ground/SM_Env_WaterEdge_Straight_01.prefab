@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 447142}
   - component: {fileID: 3347706}
   - component: {fileID: 2398442}
-  - component: {fileID: 64938448435922512}
-  - component: {fileID: 64292720224050656}
-  - component: {fileID: 64888456603710102}
   - component: {fileID: -2949202914389149920}
   m_Layer: 0
   m_Name: SM_Env_WaterEdge_Straight_01
@@ -87,48 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64938448435922512
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43606417390953776, guid: 67bf5f140894289489c2666f950d7c3d, type: 2}
---- !u!64 &64292720224050656
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43535421376205756, guid: 67bf5f140894289489c2666f950d7c3d, type: 2}
---- !u!64 &64888456603710102
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163794}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43233700385141446, guid: 67bf5f140894289489c2666f950d7c3d, type: 2}
 --- !u!65 &-2949202914389149920
 BoxCollider:
   m_ObjectHideFlags: 0

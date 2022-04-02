@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 443680}
   - component: {fileID: 3391602}
   - component: {fileID: 2369954}
-  - component: {fileID: 64817982920876396}
-  - component: {fileID: 64258971087947130}
-  - component: {fileID: 64764884830161194}
   - component: {fileID: -5253828442744846875}
   m_Layer: 0
   m_Name: SM_Env_WaterEdge_Pipe_01
@@ -87,48 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64817982920876396
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43611724465298132, guid: 5a856496cd41bd8408cc88c309515b0f, type: 2}
---- !u!64 &64258971087947130
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43308826859340280, guid: 5a856496cd41bd8408cc88c309515b0f, type: 2}
---- !u!64 &64764884830161194
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43106762294346364, guid: 5a856496cd41bd8408cc88c309515b0f, type: 2}
 --- !u!65 &-5253828442744846875
 BoxCollider:
   m_ObjectHideFlags: 0

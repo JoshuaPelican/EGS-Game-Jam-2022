@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 482562}
   - component: {fileID: 3312862}
   - component: {fileID: 2384410}
-  - component: {fileID: 64181919653948672}
-  - component: {fileID: 64798439037361596}
-  - component: {fileID: 64585553700490996}
   - component: {fileID: -3047191878227169068}
   m_Layer: 0
   m_Name: SM_Env_WaterEdge_Corner_02
@@ -87,48 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64181919653948672
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43055695756830288, guid: 7ecd21011b742804aa0892c63b1fa2dc, type: 2}
---- !u!64 &64798439037361596
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43914657580264490, guid: 7ecd21011b742804aa0892c63b1fa2dc, type: 2}
---- !u!64 &64585553700490996
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108702}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 43240367069179374, guid: 7ecd21011b742804aa0892c63b1fa2dc, type: 2}
 --- !u!65 &-3047191878227169068
 BoxCollider:
   m_ObjectHideFlags: 0
