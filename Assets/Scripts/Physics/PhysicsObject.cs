@@ -33,6 +33,7 @@ public class PhysicsObject : MonoBehaviour
 
         rig.isKinematic = true;
 
+        //Size Calculation
         size = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z);
 
         //Score Caluclation
