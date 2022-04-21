@@ -12,12 +12,13 @@ public class TornadoController : MonoBehaviour
     [SerializeField] float TowardsForce = 40;
     [SerializeField] float PerpendicularForce = 15;
     [SerializeField] float UpForce = 30;
+    [SerializeField] float ForceGrowthFactor = 1.1f;
 
     [Header("Size Settings")]
     [SerializeField] IntVariable ScoreVariable;
-    [SerializeField] float ScoreSizeRatio = 0.0001f;
+    [SerializeField] [Range(0.1f, 10)] float SizeGrowthFactor = 2;
 
-    float Size { get { return Mathf.Sqrt((ScoreVariable.Value * ScoreSizeRatio) + 1); } }
+    float Size { get { return Mathf.Pow(ScoreVariable.Value / 1000f, 1 / SizeGrowthFactor) + 1; } }
 
     List<PhysicsObject> objectsInRange = new List<PhysicsObject>();
     Collider col;
@@ -25,6 +26,7 @@ public class TornadoController : MonoBehaviour
     private void Start()
     {
         col = GetComponent<Collider>();
+        Debug.Log(PhysicsObject.TotalObjects);
     }
 
     private void Update()
@@ -98,7 +100,8 @@ public class TornadoController : MonoBehaviour
             float distanceToTornado = Vector3.Distance(transform.position, obj.transform.position);
 
             //Force proportional to object distance and tonado size
-            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, (distanceToTornado / col.bounds.extents.magnitude) * Size);
+            float forceFactor = Mathf.Pow((distanceToTornado / col.bounds.extents.magnitude) * Size + obj.Size, ForceGrowthFactor);
+            Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, forceFactor);
 
             //Debug.Log("Force: " + proportionalTornadoForce);
             obj.AddForce(proportionalTornadoForce);
