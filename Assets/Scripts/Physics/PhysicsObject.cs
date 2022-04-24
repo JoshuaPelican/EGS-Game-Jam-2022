@@ -7,6 +7,8 @@ public class PhysicsObject : MonoBehaviour
     [SerializeField] IntVariable ScoreVariable;
 
     public bool IsDestroyed = false;
+    public delegate void ObjectEvent();
+    public ObjectEvent OnObjectDestroyed;
 
     float size;
     public float Size { get { return size; } }
@@ -64,5 +66,6 @@ public class PhysicsObject : MonoBehaviour
         TotalDestroyedObjects++;
         rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;
+        OnObjectDestroyed?.Invoke();
     }
 }
