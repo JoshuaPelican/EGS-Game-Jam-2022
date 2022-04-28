@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 409754}
   - component: {fileID: 3342962}
   - component: {fileID: 2318672}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Env_Ocean_Tile_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

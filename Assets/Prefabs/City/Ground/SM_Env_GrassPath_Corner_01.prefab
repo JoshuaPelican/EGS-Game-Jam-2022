@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3398842}
   - component: {fileID: 2349170}
   - component: {fileID: 65589432748850290}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Env_GrassPath_Corner_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}

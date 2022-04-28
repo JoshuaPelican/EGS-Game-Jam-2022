@@ -1,18 +1,30 @@
+using System.Collections;
 using UnityEngine;
 
 public class ReactiveNPC : MonoBehaviour
 {
-    [SerializeField] Animator animtator;
-    [SerializeField] PhysicsObject physicsObject;
+    [Header("Reaction Settings")]
+    [SerializeField] float TimeToCalm = 5f;
+    [SerializeField] float TimeToGetUp = 1.5f;
+
+    [Header("Component References")]
+    [SerializeField] Transform Root;
+    [SerializeField] Animator Animator;
+    [SerializeField] Rigidbody Rig;
+    [SerializeField] PhysicsObject PhysicsObject;
+    [Space]
+    [SerializeField] BoxCollider Collider;
 
     private void OnEnable()
     {
-        physicsObject.OnObjectDestroyed += OnDestroyed;
+        PhysicsObject.OnObjectDestroyed += OnDestroyed;
+        PhysicsObject.OnObjectSleep += Splat;
     }
 
     private void OnDisable()
     {
-        physicsObject.OnObjectDestroyed -= OnDestroyed;
+        PhysicsObject.OnObjectDestroyed -= OnDestroyed;
+        PhysicsObject.OnObjectSleep -= Splat;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,13 +35,39 @@ public class ReactiveNPC : MonoBehaviour
         OnFearful();
     }
 
+    void Splat()
+    {
+        Rig.isKinematic = true;
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        Root.rotation = Quaternion.Euler(Quaternion.identity.eulerAngles);
+
+        Animator.SetBool("Grounded", true);
+    }
+
+    void OnCalm()
+    {
+        Animator.SetBool("Fearful", false);
+        Animator.SetBool("Destroyed", false);
+        SetColliderSize(false);
+    }
+
     void OnFearful()
     {
-        animtator.SetBool("Fearful", true);
+        Animator.SetBool("Fearful", true);
     }
 
     void OnDestroyed()
     {
-        animtator.SetBool("Destroyed", true);
+        Animator.SetBool("Destroyed", true);
+        Animator.SetBool("Grounded", false);
+        SetColliderSize(true);
+    }
+
+    void SetColliderSize(bool falling)
+    {
+        if (falling)
+            Collider.size = new Vector3(90f, 30f, 183f);
+        else
+            Collider.size = new Vector3(90f, 183f, 30f);
     }
 }

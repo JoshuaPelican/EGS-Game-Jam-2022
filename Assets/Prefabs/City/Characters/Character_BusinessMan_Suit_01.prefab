@@ -763,10 +763,10 @@ GameObject:
   m_Component:
   - component: {fileID: 487220}
   - component: {fileID: 13774396}
-  - component: {fileID: 869851079}
-  - component: {fileID: 869851080}
-  - component: {fileID: 869851078}
-  - component: {fileID: 3951998059610335832}
+  - component: {fileID: 6583807312460862575}
+  - component: {fileID: 4339467212021078848}
+  - component: {fileID: 1788699604651870896}
+  - component: {fileID: 5517382948145887612}
   m_Layer: 0
   m_Name: Character_BusinessMan_Suit
   m_TagString: Untagged
@@ -893,7 +893,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000015258789, y: 86.43996, z: -5.6034155}
     m_Extent: {x: 102.45593, y: 96.25047, z: 27.715912}
   m_DirtyAABB: 0
---- !u!54 &869851079
+--- !u!54 &6583807312460862575
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,8 +909,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &869851080
-CapsuleCollider:
+--- !u!65 &4339467212021078848
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -919,11 +919,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 35
-  m_Height: 192.50093
-  m_Direction: 1
-  m_Center: {x: -0.000015258789, y: 86.43996, z: -5.6034155}
---- !u!114 &869851078
+  serializedVersion: 2
+  m_Size: {x: 90, y: 183, z: 30}
+  m_Center: {x: 0, y: 91, z: 0}
+--- !u!114 &1788699604651870896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -937,7 +936,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   IsDestroyed: 0
---- !u!33 &3951998059610335832
+  SizeModifier: 1
+  TimeToSleep: 0.05
+--- !u!33 &5517382948145887612
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1823,7 +1824,7 @@ GameObject:
   - component: {fileID: 3880229460935796362}
   - component: {fileID: 1143368449168638729}
   - component: {fileID: 860554633818495779}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Reactivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,7 +1857,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 500
+  m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &860554633818495779
 MonoBehaviour:
@@ -1870,5 +1871,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0e23f3131af23459cf78583889b4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animtator: {fileID: 9581884}
-  physicsObject: {fileID: 869851078}
+  TimeToCalm: 3
+  TimeToGetUp: 3
+  Root: {fileID: 487220}
+  Animator: {fileID: 9581884}
+  Rig: {fileID: 6583807312460862575}
+  PhysicsObject: {fileID: 1788699604651870896}
+  Collider: {fileID: 4339467212021078848}
