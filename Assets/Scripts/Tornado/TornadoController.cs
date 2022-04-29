@@ -16,9 +16,9 @@ public class TornadoController : MonoBehaviour
 
     [Header("Size Settings")]
     [SerializeField] IntVariable ScoreVariable;
-    [SerializeField] [Range(0.1f, 10)] float SizeGrowthFactor = 2;
+    [SerializeField] float SizeGrowthFactor = 2;
 
-    float Size { get { return Mathf.Pow(ScoreVariable.Value / 1000f, 1 / SizeGrowthFactor) + 1; } }
+    float Size { get { return ((ScoreVariable.Value / 1000f) * SizeGrowthFactor) + 1; } }
 
     List<PhysicsObject> objectsInRange = new List<PhysicsObject>();
     Collider col;

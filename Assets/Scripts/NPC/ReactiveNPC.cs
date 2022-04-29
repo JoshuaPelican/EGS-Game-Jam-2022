@@ -37,9 +37,9 @@ public class ReactiveNPC : MonoBehaviour
 
     void Splat()
     {
-        Rig.isKinematic = true;
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         Root.rotation = Quaternion.Euler(Quaternion.identity.eulerAngles);
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        Rig.isKinematic = true;
 
         Animator.SetBool("Grounded", true);
     }
