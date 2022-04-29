@@ -16,7 +16,7 @@ public class ReactiveNPC : MonoBehaviour
     [SerializeField] BoxCollider Collider;
 
     bool fearful;
-    bool dead;
+    bool destroyed;
     Vector3 runDirection;
     int randIdleIndex = 0;
 
@@ -36,7 +36,7 @@ public class ReactiveNPC : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!fearful || dead)
+        if (!fearful || destroyed)
             return;
 
         Vector3 movement = runDirection * RunSpeed;
@@ -62,7 +62,6 @@ public class ReactiveNPC : MonoBehaviour
         transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         Rig.isKinematic = true;
 
-        dead = true;
         Animator.SetBool("Grounded", true);
     }
 
@@ -83,6 +82,7 @@ public class ReactiveNPC : MonoBehaviour
 
     void OnDestroyed()
     {
+        destroyed = true;
         Animator.SetBool("Destroyed", true);
         Animator.SetBool("Grounded", false);
         SetColliderSize(true);
