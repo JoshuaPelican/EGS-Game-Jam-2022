@@ -12,8 +12,11 @@ public class PhysicsObject : MonoBehaviour
 
     float size;
     public float Size { get { return size; } }
+
     [Header("Object Settings")]
     [SerializeField] float SizeModifier = 1f;
+
+    [SerializeField] bool StartStatic = true;
       
     int scoreValue;
     
@@ -38,7 +41,7 @@ public class PhysicsObject : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (sleeping)
+        if (sleeping || !IsDestroyed)
             return;
         if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
             return;
@@ -63,7 +66,7 @@ public class PhysicsObject : MonoBehaviour
     {
         TotalObjects++;
 
-        rig.isKinematic = true;
+        rig.isKinematic = StartStatic;
 
         //Size Calculation
         size = (mesh.bounds.size.x * transform.localScale.x) * (mesh.bounds.size.y * transform.localScale.y) * (mesh.bounds.size.z * transform.localScale.z) * SizeModifier;
