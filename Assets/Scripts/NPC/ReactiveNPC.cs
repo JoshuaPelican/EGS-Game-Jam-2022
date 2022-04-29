@@ -4,8 +4,7 @@ using UnityEngine;
 public class ReactiveNPC : MonoBehaviour
 {
     [Header("Reaction Settings")]
-    [SerializeField] float TimeToCalm = 5f;
-    [SerializeField] float TimeToGetUp = 1.5f;
+    [SerializeField] float TimeToCalm = 3f;
 
     [Header("Component References")]
     [SerializeField] Transform Root;
@@ -27,7 +26,7 @@ public class ReactiveNPC : MonoBehaviour
         PhysicsObject.OnObjectSleep -= Splat;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!other.TryGetComponent(out Fearsome fearsome))
             return;
@@ -47,13 +46,13 @@ public class ReactiveNPC : MonoBehaviour
     void OnCalm()
     {
         Animator.SetBool("Fearful", false);
-        Animator.SetBool("Destroyed", false);
-        SetColliderSize(false);
     }
 
     void OnFearful()
     {
         Animator.SetBool("Fearful", true);
+        StopAllCoroutines();
+        StartCoroutine(CalmOverTime(TimeToCalm));
     }
 
     void OnDestroyed()
@@ -69,5 +68,12 @@ public class ReactiveNPC : MonoBehaviour
             Collider.size = new Vector3(90f, 30f, 183f);
         else
             Collider.size = new Vector3(90f, 183f, 30f);
+    }
+
+    IEnumerator CalmOverTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        OnCalm();
     }
 }
