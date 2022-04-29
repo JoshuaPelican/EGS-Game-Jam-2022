@@ -938,7 +938,7 @@ MonoBehaviour:
   IsDestroyed: 0
   SizeModifier: 1
   StartStatic: 0
-  TimeToSleep: 0.1
+  TimeToSleep: 0.055
 --- !u!33 &5517382948145887612
 MeshFilter:
   m_ObjectHideFlags: 0

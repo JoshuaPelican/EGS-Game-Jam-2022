@@ -42,11 +42,11 @@ ModelImporter:
       name: Falling Flat
       takeName: mixamo.com
       internalID: 0
-      firstFrame: 0
+      firstFrame: 3.7
       lastFrame: 33
       wrapMode: 0
       orientationOffsetY: 15
-      level: -0.875
+      level: -0.8
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
