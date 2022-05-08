@@ -6,6 +6,8 @@ public class ReactiveNPC : MonoBehaviour
     [Header("Reaction Settings")]
     [SerializeField] float RunSpeed = 4f;
     [SerializeField] float TimeToCalm = 3f;
+    [Space]
+    [SerializeField] Personality IdlePersonality;
 
     [Header("Component References")]
     [SerializeField] Transform Root;
@@ -15,17 +17,32 @@ public class ReactiveNPC : MonoBehaviour
     [Space]
     [SerializeField] BoxCollider Collider;
 
+    enum Personality
+    {
+        Simple,
+        Neutral,
+        PhoneCallFred,
+        Searching,
+        TextSavvy,
+        Friendly,
+        Argumentative,
+        Bored,
+        Dancing
+    }
+
     bool fearful;
     bool destroyed;
     Vector3 runDirection;
-    int randIdleIndex = 0;
+
+    private void Start()
+    {
+        SetIdle();
+    }
 
     private void OnEnable()
     {
         PhysicsObject.OnObjectDestroyed += OnDestroyed;
         PhysicsObject.OnObjectSleep += Splat;
-
-        SetRandomIdle();
     }
 
     private void OnDisable()
@@ -59,7 +76,7 @@ public class ReactiveNPC : MonoBehaviour
     void Splat()
     {
         Root.rotation = Quaternion.Euler(Quaternion.identity.eulerAngles.x, Root.rotation.eulerAngles.y, Quaternion.identity.eulerAngles.z);
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        Root.position = new Vector3(transform.position.x, -0.8f, transform.position.z);
         Rig.isKinematic = true;
 
         Animator.SetBool("Grounded", true);
@@ -68,7 +85,6 @@ public class ReactiveNPC : MonoBehaviour
     void OnCalm()
     {
         fearful = false;
-        SetRandomIdle();
         Animator.SetBool("Fearful", false);
     }
 
@@ -103,9 +119,8 @@ public class ReactiveNPC : MonoBehaviour
         OnCalm();
     }
 
-    void SetRandomIdle()
+    void SetIdle()
     {
-        randIdleIndex = Random.Range(0, 8);
-        Animator.SetFloat("IdleIndex", randIdleIndex);
+        Animator.SetFloat("IdleIndex", (int)IdlePersonality);
     }
 }

@@ -1874,6 +1874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunSpeed: 2.5
   TimeToCalm: 3
+  IdlePersonality: 2
   Root: {fileID: 487220}
   Animator: {fileID: 9581884}
   Rig: {fileID: 6583807312460862575}

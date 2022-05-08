@@ -210,11 +210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Joshua Pelkington - Coding
-
-    Joi Saito - Level Design
-
-'
+  m_text: Abducted Monkeys
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf791973f4a715641a56ace172b53a20, type: 2}
   m_sharedMaterial: {fileID: -3670173610667374838, guid: bf791973f4a715641a56ace172b53a20, type: 2}
@@ -2164,11 +2160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Joshua Pelkington - Coding
-
-    Joi Saito - Level Design
-
-'
+  m_text: Abducted Monkeys
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf791973f4a715641a56ace172b53a20, type: 2}
   m_sharedMaterial: {fileID: -3670173610667374838, guid: bf791973f4a715641a56ace172b53a20, type: 2}
