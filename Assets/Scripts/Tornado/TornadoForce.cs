@@ -1,13 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TornadoController : MonoBehaviour
+public class TornadoForce : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    [SerializeField] float Speed = 10;
-    [SerializeField] [Range(0, 1)] float AccelerationSpeed = 0.5f;
-    [SerializeField] float MaxAreaRadius = 180f;
-
     [Header("Force Settings")]
     [SerializeField] float TowardsForce = 40;
     [SerializeField] float PerpendicularForce = 15;
@@ -21,20 +16,6 @@ public class TornadoController : MonoBehaviour
     float Size { get { return (Mathf.Sqrt((ScoreVariable.Value * SizeGrowthFactor) / 1000f)) + 1; } }
 
     List<PhysicsObject> objectsInRange = new List<PhysicsObject>();
-    Collider col;
-
-    private void Start()
-    {
-        col = GetComponent<Collider>();
-        Debug.Log(PhysicsObject.TotalObjects);
-    }
-
-    private void Update()
-    {
-        Vector3 direction = CalculateDirection();
-        Vector3 movement = CalculateMovement(direction);
-        ApplyMovement(movement);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -46,7 +27,7 @@ public class TornadoController : MonoBehaviour
     private void FixedUpdate()
     {
         //Scale size over time
-        transform.localScale = Vector3.Lerp(transform.localScale,  Vector3.one * Size, 0.1f);
+        transform.parent.localScale = Vector3.Lerp(transform.localScale, Vector3.one * Size, 0.1f);
 
         //Affect objects in the list
         foreach (PhysicsObject obj in objectsInRange)
@@ -60,31 +41,6 @@ public class TornadoController : MonoBehaviour
             objectsInRange.Remove(obj);
     }
 
-    Vector3 CalculateDirection()
-    {
-        //Input
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        //Direction Calculation
-        return Vector3.ClampMagnitude(new Vector3(horizontal, 0, vertical), 1);
-    }
-
-    Vector3 CalculateMovement(Vector3 direction)
-    {
-        //Movement Calculation
-        return direction * Speed * Size * Time.deltaTime;
-    }
-
-    void ApplyMovement(Vector3 movement)
-    {
-        //Move the tornado according to movement
-        transform.position = Vector3.Slerp(transform.position, transform.position + movement, AccelerationSpeed);
-
-        //Check if the tornado is out of bounds, if it is then move it back
-        if (transform.position.magnitude > MaxAreaRadius)
-            transform.position = Vector3.Slerp(transform.position, transform.position - movement, AccelerationSpeed);
-    }
 
     void ApplyPhysics(PhysicsObject obj)
     {
@@ -100,7 +56,7 @@ public class TornadoController : MonoBehaviour
             float distanceToTornado = Vector3.Distance(transform.position, obj.transform.position);
 
             //Force proportional to object distance and tonado size
-            float forceFactor = Mathf.Pow((distanceToTornado / col.bounds.extents.magnitude) * Size + obj.Size, ForceGrowthFactor);
+            float forceFactor = Mathf.Pow((distanceToTornado / transform.localScale.magnitude) * Size + obj.Size, ForceGrowthFactor);
             Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, forceFactor);
 
             //Debug.Log("Force: " + proportionalTornadoForce);

@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138838207886850870}
-  - component: {fileID: 2138838207886850889}
-  - component: {fileID: 2138838207886850867}
-  m_Layer: 0
+  - component: {fileID: 8045307136870041491}
+  - component: {fileID: 2961074031539321842}
+  - component: {fileID: 3303158621928199539}
+  m_Layer: 9
   m_Name: Tornado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,28 +31,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2138838209391802704}
+  - {fileID: 6021013310297834106}
+  - {fileID: 6312220864834096172}
   - {fileID: 5789893071157089585}
   - {fileID: 442812566758581326}
-  - {fileID: 6312220864834096172}
+  - {fileID: 2138838209391802704}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2138838207886850889
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138838207886850864}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1
-  m_Height: 3.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.75, z: 0}
---- !u!114 &2138838207886850867
+--- !u!114 &8045307136870041491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,18 +48,46 @@ MonoBehaviour:
   m_GameObject: {fileID: 2138838207886850864}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e3a3a98ffe02484ebf69a5c345ad6c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 81ca7dcb5e08e104b9bcbdf427dd7011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
-  AccelerationSpeed: 0.5
-  MaxAreaRadius: 180
-  TowardsForce: 120
-  PerpendicularForce: -20
-  UpForce: 60
-  ForceGrowthFactor: 2.5
-  ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
-  SizeGrowthFactor: 0.25
+  Speed: 30
+  MaxVelocity: 8
+  Friction: 0.995
+--- !u!143 &2961074031539321842
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138838207886850864}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.8
+  m_SlopeLimit: 50
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.0001
+  m_MinMoveDistance: 0.01
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!54 &3303158621928199539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138838207886850864}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2138838209391802716
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +121,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2138838207886850870}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!20 &2138838209391802705
 Camera:
@@ -296,11 +312,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6312220864834096172}
-  - component: {fileID: 3883601257415769305}
-  - component: {fileID: 1493380760546690010}
   - component: {fileID: 4251378709003461114}
-  m_Layer: 9
-  m_Name: Collision
+  - component: {fileID: 2724026109048758626}
+  m_Layer: 8
+  m_Name: Reactivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -319,38 +334,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2138838207886850870}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &3883601257415769305
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201406532898876917}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1
-  m_Height: 3.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.75, z: 0}
---- !u!54 &1493380760546690010
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5201406532898876917}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4251378709003461114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +348,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3f41a2ae482c544d8e1bb154dc74b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &2724026109048758626
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201406532898876917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 3
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!1 &5518304951380642627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6021013310297834106}
+  - component: {fileID: 1297749802756723734}
+  - component: {fileID: 1092365572319478580}
+  m_Layer: 0
+  m_Name: Tornado Force
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6021013310297834106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518304951380642627}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2138838207886850870}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1297749802756723734
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518304951380642627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 3.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75, z: 0}
+--- !u!114 &1092365572319478580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5518304951380642627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be2b03f3a6940640a6ed840e1692053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TowardsForce: 120
+  PerpendicularForce: -20
+  UpForce: 60
+  ForceGrowthFactor: 2.5
+  ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
+  SizeGrowthFactor: 0.25
 --- !u!1001 &121481550377517989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -372,7 +436,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f6f89739681616e4fb600d8ee3b94626, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6f89739681616e4fb600d8ee3b94626, type: 3}
       propertyPath: m_LocalScale.x
@@ -458,11 +522,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f6f89739681616e4fb600d8ee3b94626, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6f89739681616e4fb600d8ee3b94626, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6f89739681616e4fb600d8ee3b94626, type: 3}
       propertyPath: m_LocalPosition.y
