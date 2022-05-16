@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 441798}
   - component: {fileID: 3399338}
   - component: {fileID: 2343824}
-  - component: {fileID: 554310372}
   - component: {fileID: 554310371}
   - component: {fileID: 554310370}
+  - component: {fileID: -8743982416562890971}
   m_Layer: 0
   m_Name: SM_Prop_LightPole_Base_01
   m_TagString: Untagged
@@ -86,19 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &554310372
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.34573564, y: 6.482998, z: 2.4787297}
-  m_Center: {x: -0.0000009536745, y: 3.241499, z: 1.0665}
 --- !u!54 &554310371
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,3 +116,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   IsDestroyed: 0
+  SizeModifier: 1
+  TimeToSleep: 3
+--- !u!64 &-8743982416562890971
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4f59a66caa51dd342a8ba246d9d0264f, type: 3}

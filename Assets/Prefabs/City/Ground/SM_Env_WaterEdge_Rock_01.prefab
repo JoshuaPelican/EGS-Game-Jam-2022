@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 424094}
   - component: {fileID: 3333414}
   - component: {fileID: 2355912}
-  - component: {fileID: -5296924925596318259}
-  m_Layer: 0
+  - component: {fileID: 2111674206904011175}
+  m_Layer: 7
   m_Name: SM_Env_WaterEdge_Rock_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 189994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6530109, y: 0.6530109, z: 0.6530109}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-5296924925596318259
-BoxCollider:
+--- !u!64 &2111674206904011175
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,6 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.542803, y: 1.9180126, z: 6.0085144}
-  m_Center: {x: 0.009991646, y: 0.9590063, z: 0.18122101}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 27bf65190db556643904ee371814b40c, type: 3}
