@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 30
   MaxVelocity: 8
-  Friction: 0.995
+  Friction: 0.975
 --- !u!143 &2961074031539321842
 CharacterController:
   m_ObjectHideFlags: 0
