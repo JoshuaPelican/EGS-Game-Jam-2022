@@ -21,8 +21,7 @@ public class TornadoMovement : MonoBehaviour
     private void Update()
     {
         Vector3 direction = CalculateDirection();
-        Vector3 movement = CalculateMovement(direction);
-        ApplyMovement(movement);
+        Move(Speed, direction);
     }
 
     Vector3 CalculateDirection()
@@ -35,23 +34,20 @@ public class TornadoMovement : MonoBehaviour
         return Vector3.ClampMagnitude(new Vector3(horizontal, 0, vertical), 1);
     }
 
-    Vector3 CalculateMovement(Vector3 direction)
+    public void Move(float speed, Vector3 direction)
     {
         //Velocity Calculation
-        velocity += Time.deltaTime * Speed * direction;
+        velocity += Time.deltaTime * speed * (transform.rotation * direction);
         velocity = Vector3.ClampMagnitude(velocity, MaxVelocity);
 
-        if(Mathf.Abs(CalculateDirection().magnitude) <= 0.05f)
+        //Apply slowing friction force
+        if (Mathf.Abs(CalculateDirection().magnitude) <= 0.05f)
         {
             velocity *= Friction;
         }
 
-        //Movement Calculation
-        return transform.localScale.x * Time.deltaTime * velocity + Physics.gravity;
-    }
+        Vector3 movement = transform.localScale.x * Time.deltaTime * velocity + (Physics.gravity * Time.deltaTime);
 
-    public void ApplyMovement(Vector3 movement)
-    {
         //Move the tornado according to movement
         controller.Move(movement);
     }
