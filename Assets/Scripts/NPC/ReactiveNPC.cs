@@ -19,6 +19,8 @@ public class ReactiveNPC : MonoBehaviour
     [Space]
     [SerializeField] BoxCollider Collider;
 
+    int t = 0;
+
     enum Personality
     {
         Simple,
@@ -72,9 +74,13 @@ public class ReactiveNPC : MonoBehaviour
         if (Physics.Raycast(transform.position, (fearsome.transform.position - transform.position).normalized, Vector3.Distance(transform.position, fearsome.transform.position), BlocksLineOfSight, QueryTriggerInteraction.Ignore))
             return;
 
-        Debug.DrawLine(transform.position, fearsome.transform.position, Color.red, Time.deltaTime);
+        t++;
+        if (t <= 20)
+            return;
 
-        runDirection = Vector3.Slerp(runDirection, (transform.position - fearsome.transform.position).normalized, 0.01f);
+        t = 0;
+
+        runDirection = Vector3.Slerp(runDirection, (transform.position - fearsome.transform.position).normalized, TurningSpeed);
         runDirection = new Vector3(runDirection.x, 0, runDirection.z);
 
         OnFearful();

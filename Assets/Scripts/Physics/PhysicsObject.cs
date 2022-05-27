@@ -15,7 +15,6 @@ public class PhysicsObject : MonoBehaviour
 
     [Header("Object Settings")]
     [SerializeField] float SizeModifier = 1f;
-
     [SerializeField] bool StartStatic = true;
       
     int scoreValue;
@@ -51,7 +50,7 @@ public class PhysicsObject : MonoBehaviour
         {
             sleeping = true;
             sleepTimer = 0;
-            OnObjectSleep?.Invoke();
+            Sleep();
         }
     }
 
@@ -101,5 +100,12 @@ public class PhysicsObject : MonoBehaviour
         rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;
         OnObjectDestroyed?.Invoke();
+    }
+
+    void Sleep()
+    {
+        OnObjectSleep?.Invoke();
+        rig.Sleep();
+        gameObject.isStatic = true;
     }
 }
