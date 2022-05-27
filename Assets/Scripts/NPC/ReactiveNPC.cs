@@ -5,7 +5,9 @@ public class ReactiveNPC : MonoBehaviour
 {
     [Header("Reaction Settings")]
     [SerializeField] float RunSpeed = 4f;
+    [SerializeField] [Range(0f, 1f)] float TurningSpeed = 0.05f;
     [SerializeField] float TimeToCalm = 3f;
+    [SerializeField] LayerMask BlocksLineOfSight;
     [Space]
     [SerializeField] Personality IdlePersonality;
 
@@ -67,7 +69,12 @@ public class ReactiveNPC : MonoBehaviour
         if (!other.TryGetComponent(out Fearsome fearsome))
             return;
 
-        runDirection = (transform.position - fearsome.transform.position).normalized;
+        if (Physics.Raycast(transform.position, (fearsome.transform.position - transform.position).normalized, Vector3.Distance(transform.position, fearsome.transform.position), BlocksLineOfSight, QueryTriggerInteraction.Ignore))
+            return;
+
+        Debug.DrawLine(transform.position, fearsome.transform.position, Color.red, Time.deltaTime);
+
+        runDirection = Vector3.Slerp(runDirection, (transform.position - fearsome.transform.position).normalized, 0.01f);
         runDirection = new Vector3(runDirection.x, 0, runDirection.z);
 
         OnFearful();
@@ -75,8 +82,7 @@ public class ReactiveNPC : MonoBehaviour
 
     void Splat()
     {
-        Root.rotation = Quaternion.Euler(Quaternion.identity.eulerAngles.x, Root.rotation.eulerAngles.y, Quaternion.identity.eulerAngles.z);
-        Root.position = new Vector3(transform.position.x, -0.8f, transform.position.z);
+        Root.SetPositionAndRotation(new Vector3(transform.position.x, -0.8f, transform.position.z), Quaternion.Euler(Quaternion.identity.eulerAngles.x, Root.rotation.eulerAngles.y, Quaternion.identity.eulerAngles.z));
         Rig.isKinematic = true;
 
         Animator.SetBool("Grounded", true);
