@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 75
+  controlID: 86
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 19
+  controlID: 84
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 74
+  controlID: 85
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_SerializedViewValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 3840, y: 2160}
   m_TextureFilterMode: 0
@@ -368,7 +368,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -440,36 +440,36 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Town/Generic
+    - Assets/Prefabs/City/Destructables/Props
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs/Town/Generic
+  - Assets/Prefabs/City/Destructables/Props
   m_LastFoldersGridSize: 64
   m_LastProjectPath: G:\GameDev\TornadoTown\EGS-Game-Jam-2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 300}
-    m_SelectedIDs: 8c980100
-    m_LastClickedID: 104588
-    m_ExpandedIDs: 00000000f6860000f8860000fa860000fe86000000870000be880000c0880000c6880000b4dc000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d4360100
+    m_LastClickedID: 79572
+    m_ExpandedIDs: 00000000de340100e0340100e2340100e4340100e6340100e8340100ea340100ec3401000037010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: All Prefabs
-      m_OriginalName: All Prefabs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1000000004
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -483,7 +483,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 800}
     m_SelectedIDs: f6610000
     m_LastClickedID: 25078
-    m_ExpandedIDs: 00000000f6860000f8860000fa860000fc860000fe86000000870000
+    m_ExpandedIDs: 00000000de340100e0340100e2340100e4340100e6340100e8340100ea340100ec340100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,18 +514,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: 9e770000982d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Environment
-      m_OriginalName: Environment
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 59824
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -786,9 +786,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 131.98201, y: -59.40637, z: 130.37679}
+    m_Target: {x: 79.569534, y: 56.428177, z: 188.72444}
     speed: 2
-    m_Value: {x: 131.98201, y: -59.40637, z: 130.37679}
+    m_Value: {x: 79.569534, y: 56.428177, z: 188.72444}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -835,13 +835,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.547
   m_Rotation:
-    m_Target: {x: -0.50743514, y: -0.0041120118, z: 0.0024278027, w: -0.8617045}
+    m_Target: {x: 0.23443763, y: -0.1904208, z: 0.046184473, w: 0.95251864}
     speed: 2
-    m_Value: {x: -0.5087149, y: -0.004108267, z: 0.0024339103, w: -0.8609218}
+    m_Value: {x: 0.23429242, y: -0.19178744, z: 0.046521053, w: 0.9519245}
   m_Size:
-    m_Target: 215.87947
+    m_Target: 18.523336
     speed: 2
-    m_Value: 215.87947
+    m_Value: 17.725681
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1061,9 +1061,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: d245feff
       m_LastClickedID: 0
-      m_ExpandedIDs: 803ef7ff1ccefaff18fbffff187d0000
+      m_ExpandedIDs: 7c47f9ff9e1cfaff2ef6fcff08a1feff6efaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
