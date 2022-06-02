@@ -6,7 +6,8 @@
 
 /[Mm]emoryCaptures/
 /[Ll]ogs/
-/[Uu]serSettings/
+/[Uu]serSettings/**
+/UserSettings/Layouts/
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 [Aa]ssets/AssetStoreTools*
@@ -59,3 +60,10 @@ Thumbs.db.meta
 
 # VS Code
 *.vscode
+
+# Houdini Engine
+Assets/HDAs/backup/
+Assets/HoudiniEngineAssetCache/Working/
+
+# Probuilder Settings
+ProjectSettings/Packages/com.unity.probuilder/Settings.json
