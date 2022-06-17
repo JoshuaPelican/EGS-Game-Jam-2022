@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 64490690824504340}
   - component: {fileID: -1117384432084090090}
   - component: {fileID: 5539514297537594244}
+  - component: {fileID: 1882751063719832002}
   m_Layer: 0
   m_Name: SM_Prop_Toast_03
   m_TagString: Untagged
@@ -133,3 +134,22 @@ MonoBehaviour:
   SizeModifier: 1
   StartStatic: 1
   TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
+--- !u!114 &1882751063719832002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330774058258882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c60441339e6045892aacdd03df28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreVariable: {fileID: 0}
+  IsDestroyed: 0
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}

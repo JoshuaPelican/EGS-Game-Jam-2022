@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 64516584204188162}
   - component: {fileID: 6466879171164687813}
   - component: {fileID: -6391359463831355441}
+  - component: {fileID: 1453558468502525656}
   m_Layer: 0
   m_Name: SM_Prop_Lunchbox_Plastic_01
   m_TagString: Untagged
@@ -135,6 +136,25 @@ MonoBehaviour:
   SizeModifier: 1
   StartStatic: 1
   TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
+--- !u!114 &1453558468502525656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491010153477632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c60441339e6045892aacdd03df28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreVariable: {fileID: 0}
+  IsDestroyed: 0
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
 --- !u!1 &1724580054014736
 GameObject:
   m_ObjectHideFlags: 0

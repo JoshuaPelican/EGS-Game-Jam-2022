@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 64127178382189606}
   - component: {fileID: 7308205845887707523}
   - component: {fileID: -5246481360422896960}
+  - component: {fileID: 2524160078130948824}
   m_Layer: 0
   m_Name: SM_Prop_Toaster_02
   m_TagString: Untagged
@@ -133,3 +134,22 @@ MonoBehaviour:
   SizeModifier: 1
   StartStatic: 1
   TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
+--- !u!114 &2524160078130948824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603676935435122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c60441339e6045892aacdd03df28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreVariable: {fileID: 0}
+  IsDestroyed: 0
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
