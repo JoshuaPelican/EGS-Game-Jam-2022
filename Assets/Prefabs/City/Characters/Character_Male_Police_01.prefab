@@ -1874,6 +1874,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RunSpeed: 2.5
   TimeToCalm: 3
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 1024
   IdlePersonality: 7
   Root: {fileID: 405450}
   Animator: {fileID: 9582704}

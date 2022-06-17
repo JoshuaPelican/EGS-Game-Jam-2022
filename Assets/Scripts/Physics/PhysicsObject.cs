@@ -15,8 +15,11 @@ public class PhysicsObject : MonoBehaviour
 
     [Header("Object Settings")]
     [SerializeField] float SizeModifier = 1f;
-
     [SerializeField] bool StartStatic = true;
+    [SerializeField] float TimeToSleep = 3f;
+
+    [Header("Destruction Settings")]
+    [SerializeField] GameObject DestroyedPrefab;
       
     int scoreValue;
     
@@ -27,7 +30,6 @@ public class PhysicsObject : MonoBehaviour
     public static float TotalDestroyedObjects = 0;
 
     float sleepTimer = 0;
-    [SerializeField] float TimeToSleep = 3f;
     bool sleeping;
     public ObjectEvent OnObjectSleep;
 
@@ -51,7 +53,7 @@ public class PhysicsObject : MonoBehaviour
         {
             sleeping = true;
             sleepTimer = 0;
-            OnObjectSleep?.Invoke();
+            Sleep();
         }
     }
 
@@ -94,12 +96,29 @@ public class PhysicsObject : MonoBehaviour
 
     void Destroy()
     {
-        sleeping = false;
         Debug.Log($"{name} was Destroyed!");
-        IsDestroyed = true;
+
+        if (DestroyedPrefab)
+        {
+            Instantiate(DestroyedPrefab, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
+        else
+        {
+            sleeping = false;
+            IsDestroyed = true;
+            rig.isKinematic = false;
+        }
+
         TotalDestroyedObjects++;
-        rig.isKinematic = false;
         ScoreVariable.Value += scoreValue;
         OnObjectDestroyed?.Invoke();
+    }
+
+    void Sleep()
+    {
+        OnObjectSleep?.Invoke();
+        rig.Sleep();
+        gameObject.isStatic = true;
     }
 }

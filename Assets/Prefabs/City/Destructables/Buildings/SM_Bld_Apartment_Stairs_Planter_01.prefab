@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2368466}
   - component: {fileID: 1870670003613168747}
   - component: {fileID: -3694541638852581855}
-  - component: {fileID: -768892747008949605}
-  m_Layer: 0
+  - component: {fileID: 9203166109501536041}
+  m_Layer: 7
   m_Name: SM_Bld_Apartment_Stairs_Planter_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,8 +116,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   IsDestroyed: 0
---- !u!65 &-768892747008949605
-BoxCollider:
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+--- !u!64 &9203166109501536041
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -126,6 +129,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2839632, y: 3.2490387, z: 4.499997}
-  m_Center: {x: -0.00000166893, y: 0.12452012, z: -2.6696515}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: ff5cbf6f60105054b93e3851b435ab4b, type: 3}
