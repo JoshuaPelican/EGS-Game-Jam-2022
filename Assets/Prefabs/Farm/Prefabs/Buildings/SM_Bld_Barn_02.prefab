@@ -109,6 +109,8 @@ GameObject:
   - component: {fileID: 33390303382629992}
   - component: {fileID: 23289743593851018}
   - component: {fileID: 33350686735467290}
+  - component: {fileID: 5676790119097245118}
+  - component: {fileID: 5020119734350100480}
   m_Layer: 0
   m_Name: SM_Bld_Barn_02
   m_TagString: Untagged
@@ -201,6 +203,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 6275b76574af0284d811a9bee6b9699b, type: 3}
+--- !u!54 &5676790119097245118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396899642666884}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &5020119734350100480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396899642666884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c60441339e6045892aacdd03df28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
+  IsDestroyed: 0
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
 --- !u!1 &1477585596123894
 GameObject:
   m_ObjectHideFlags: 0

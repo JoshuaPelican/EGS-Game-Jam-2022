@@ -44,6 +44,11 @@ public class TornadoForce : MonoBehaviour
 
     void ApplyPhysics(PhysicsObject obj)
     {
+        if (!obj)
+        {
+            return;
+        }
+
         //If object is destroyed then apply force to it
         if (obj.IsDestroyed)
         {
