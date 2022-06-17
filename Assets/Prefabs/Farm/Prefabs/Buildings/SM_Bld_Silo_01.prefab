@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 33455055660540226}
   - component: {fileID: 23797141483537134}
   - component: {fileID: -2516762056394310745}
+  - component: {fileID: -1375156360496794013}
+  - component: {fileID: 2827439291766556595}
   m_Layer: 0
   m_Name: SM_Bld_Silo_01
   m_TagString: Untagged
@@ -98,3 +100,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b00e16df74fa77640b1d0d01680cf393, type: 3}
+--- !u!54 &-1375156360496794013
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957237772272410}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2827439291766556595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957237772272410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80c60441339e6045892aacdd03df28d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
+  IsDestroyed: 0
+  SizeModifier: 1
+  StartStatic: 1
+  TimeToSleep: 3
+  DestroyedPrefab: {fileID: 0}
