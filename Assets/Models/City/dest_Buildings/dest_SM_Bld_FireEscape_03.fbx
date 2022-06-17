@@ -7,12 +7,12 @@ FBXHeaderExtension:  {
 	CreationTimeStamp:  {
 		Version: 1000
 		Year: 2022
-		Month: 5
-		Day: 19
-		Hour: 22
+		Month: 6
+		Day: 17
+		Hour: 16
 		Minute: 49
-		Second: 23
-		Millisecond: 228
+		Second: 59
+		Millisecond: 665
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	OtherFlags:  {
@@ -37,13 +37,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "Original|ApplicationName", "KString", "", "", "Houdini"
 			P: "Original|ApplicationVersion", "KString", "", "", "19.0.561"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "20/05/2022 02:49:23.212"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "17/06/2022 20:49:59.650"
 			P: "Original|FileName", "KString", "", "", "G:\Projects\Houdini Projects\Trouble In Tornado Town\building destruction\destModels\dest_SM_Bld_FireEscape_03.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Houdini"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "19.0.561"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "20/05/2022 02:49:23.212"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "17/06/2022 20:49:59.650"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\Tom"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "G:\Projects\Houdini Projects\Trouble In Tornado Town\building destruction\buildingdestruction.hiplc"
 		}
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 5674059776, "", "Scene" {
+	Document: 6284399872, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -225,7 +225,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 5657616960, "Geometry::OUT_DESTROYED", "Mesh" {
+	Geometry: 106579520, "Geometry::OUT_DESTROYED", "Mesh" {
 		Vertices: *126 {
 			a: 2.18850564956665,0.076362133026123,0,2.18850564956665,0,0,2.18850564956665,0.076362133026123,1.46637439727783,2.18850564956665,0,1.46637439727783,3.55707478523254,0.076362133026123,0,3.53485989570618,0.076362133026123,0.438762784004211,3.53486013412476,0,0.438762724399567,3.55707502365112,0,0,2.18850564956665,0,1.64354419708252,2.18850564956665,0.076362133026123,1.64354419708252,2.18850564956665,0.076362133026123,1.46637439727783,2.18850564956665,0,1.46637439727783,4.69002294540405,0.076362133026123,1.64354419708252,4.69002294540405,0,1.64354419708252,3.53485989570618,0.076362133026123,0.438762813806534,3.53486013412476,0,0.438762724399567,4.83991527557373,0,1.64354419708252,4.83991527557373,0.076362133026123,1.64354419708252,4.83991527557373,0.076362133026123,0,4.83991527557373,0,0,4.69002294540405,0.076362133026123,1.64354419708252,4.69002294540405,0,1.64354419708252,3.55707502365112,0.076362133026123,0,3.53486013412476,0.076362133026123,0.438762843608856,3.55707502365112,0,0,3.53486013412476,0,0.438762843608856,3.48331785202026,3.25439023971558,1.72243118286133,4.24223184585571,3.25439023971558,1.72243118286133,3.48331785202026,3.25439023971558,1.64354419708252,4.24223184585571,3.25439023971558,1.64354419708252,4.19502782821655,3.20059061050415,1.72243118286133,3.53052186965942,3.20059061050415,1.72243118286133,3.53052186965942,3.20059061050415,1.64354419708252,4.19502782821655,3.20059061050415,1.64354419708252,4.24223184585571,0.739201962947845,1.72243118286133,4.24223184585571,0.739075779914856,1.64354419708252,3.48331785202026,0.739075779914856,1.64354419708252,3.48331785202026,0.739201843738556,1.72243118286133,4.19502782821655,0.73920202255249,1.72243118286133,3.53052186965942,0.739201962947845,1.72243118286133,4.19502782821655,0.739075660705566,1.64354419708252,3.53052186965942,0.739075779914856,1.64354419708252
 		} 
@@ -421,7 +421,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 6995121664, "Model::OUT_DESTROYED", "Mesh" {
+	Model: 6439955200, "Model::OUT_DESTROYED", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -431,7 +431,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Material: 5657618752, "Material::lambert738", "" {
+	Material: 106580864, "Material::PolygonCity_Mat_01_A", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -452,13 +452,13 @@ Objects:  {
 Connections:  {
 	
 	;Model::OUT_DESTROYED, Model::RootNode
-	C: "OO",6995121664,0
+	C: "OO",6439955200,0
 	
 	;Geometry::OUT_DESTROYED, Model::OUT_DESTROYED
-	C: "OO",5657616960,6995121664
+	C: "OO",106579520,6439955200
 	
-	;Material::lambert738, Model::OUT_DESTROYED
-	C: "OO",5657618752,6995121664
+	;Material::PolygonCity_Mat_01_A, Model::OUT_DESTROYED
+	C: "OO",106580864,6439955200
 }
 ;Takes section
 ;----------------------------------------------------
