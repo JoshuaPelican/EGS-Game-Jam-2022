@@ -90,6 +90,7 @@ public class ReactiveNPC : MonoBehaviour
     {
         Root.SetPositionAndRotation(new Vector3(transform.position.x, -0.8f, transform.position.z), Quaternion.Euler(Quaternion.identity.eulerAngles.x, Root.rotation.eulerAngles.y, Quaternion.identity.eulerAngles.z));
         Rig.isKinematic = true;
+        Collider.enabled = false;
 
         Animator.SetBool("Grounded", true);
     }
@@ -119,9 +120,9 @@ public class ReactiveNPC : MonoBehaviour
     void SetColliderSize(bool falling)
     {
         if (falling)
-            Collider.size = new Vector3(90f, 30f, 183f);
+            Collider.size = new Vector3(Collider.size.x, Collider.size.y / 6.1f, Collider.size.z * 6.1f);
         else
-            Collider.size = new Vector3(90f, 183f, 30f);
+            Collider.size = new Vector3(Collider.size.x, Collider.size.y * 6.1f, Collider.size.z / 6.1f);
     }
 
     IEnumerator CalmOverTime(float time)
