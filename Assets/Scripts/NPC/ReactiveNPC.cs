@@ -18,6 +18,7 @@ public class ReactiveNPC : MonoBehaviour
     [SerializeField] PhysicsObject PhysicsObject;
     [Space]
     [SerializeField] BoxCollider Collider;
+    [SerializeField] GameObject DizzyStars;
 
     int t = 0;
 
@@ -45,14 +46,14 @@ public class ReactiveNPC : MonoBehaviour
 
     private void OnEnable()
     {
-        PhysicsObject.OnObjectDestroyed += OnDestroyed;
-        PhysicsObject.OnObjectSleep += Splat;
+        PhysicsObject.OnObjectDestroyed.AddListener(OnDestroyed);
+        PhysicsObject.OnObjectSleep.AddListener(Splat);
     }
 
     private void OnDisable()
     {
-        PhysicsObject.OnObjectDestroyed -= OnDestroyed;
-        PhysicsObject.OnObjectSleep -= Splat;
+        PhysicsObject.OnObjectDestroyed.AddListener(OnDestroyed);
+        PhysicsObject.OnObjectSleep.AddListener(Splat);
     }
 
     private void FixedUpdate()
@@ -91,6 +92,7 @@ public class ReactiveNPC : MonoBehaviour
         Root.SetPositionAndRotation(new Vector3(transform.position.x, -0.8f, transform.position.z), Quaternion.Euler(Quaternion.identity.eulerAngles.x, Root.rotation.eulerAngles.y, Quaternion.identity.eulerAngles.z));
         Rig.isKinematic = true;
         Collider.enabled = false;
+        DizzyStars.SetActive(true);
 
         Animator.SetBool("Grounded", true);
     }

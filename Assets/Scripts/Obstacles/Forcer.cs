@@ -48,14 +48,14 @@ public class Forcer : MonoBehaviour
     void ApplyPhysics(Rigidbody obj)
     {
         float distanceToThis = Vector3.Distance(obj.transform.position, transform.position);
-        float forceFactor = (distanceToThis / transform.localScale.magnitude) * ForceStrength;
+        float forceFactor = (distanceToThis / transform.localScale.magnitude) * ForceStrength * 100;
         obj.AddForce(forceFactor * transform.forward * Time.deltaTime);
     }
 
     void ApplyPhysics(TornadoMovement obj)
     {
         float distanceToThis = Vector3.Distance(obj.transform.position, transform.position);
-        float forceFactor = (distanceToThis / transform.localScale.magnitude) * ForceStrength;
+        float forceFactor = ((distanceToThis / transform.localScale.magnitude) * ForceStrength) / obj.transform.localScale.x;
         obj.Move(forceFactor * Time.deltaTime, transform.forward);
     }
 }

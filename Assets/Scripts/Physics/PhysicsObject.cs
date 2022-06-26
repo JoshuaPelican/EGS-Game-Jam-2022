@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PhysicsObject : MonoBehaviour
@@ -7,8 +8,7 @@ public class PhysicsObject : MonoBehaviour
     [SerializeField] IntVariable ScoreVariable;
 
     public bool IsDestroyed = false;
-    public delegate void ObjectEvent();
-    public ObjectEvent OnObjectDestroyed;
+    public UnityEvent OnObjectDestroyed;
 
     float size;
     public float Size { get { return size; } }
@@ -31,7 +31,7 @@ public class PhysicsObject : MonoBehaviour
 
     float sleepTimer = 0;
     bool sleeping;
-    public ObjectEvent OnObjectSleep;
+    public UnityEvent OnObjectSleep;
 
     private void Awake()
     {

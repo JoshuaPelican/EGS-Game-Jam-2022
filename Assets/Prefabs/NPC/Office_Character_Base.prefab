@@ -1513,10 +1513,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   IsDestroyed: 0
+  OnObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
   SizeModifier: 0.000001
   StartStatic: 0
   TimeToSleep: 0.055
   DestroyedPrefab: {fileID: 0}
+  OnObjectSleep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &8962865596508188316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1633,6 +1639,7 @@ Transform:
   - {fileID: 230710751013665081}
   - {fileID: 230775028607269553}
   - {fileID: 230623633463908487}
+  - {fileID: 8898481706752970147}
   m_Father: {fileID: 230348287001856655}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1906,7 +1913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0e23f3131af23459cf78583889b4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RunSpeed: 10
+  RunSpeed: 15
   TurningSpeed: 0.05
   TimeToCalm: 3
   BlocksLineOfSight:
@@ -1918,3 +1925,87 @@ MonoBehaviour:
   Rig: {fileID: 2569217969321855157}
   PhysicsObject: {fileID: 3878556768620178951}
   Collider: {fileID: 8962865596508188316}
+  DizzyStars: {fileID: 8898481706752970145}
+--- !u!1001 &598639201606735751
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 230501373405779961}
+    m_Modifications:
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.113
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.231
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546214, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_Name
+      value: Dizzy Stars
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300990469378546214, guid: cb95962c6f80abe449664908b529673b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb95962c6f80abe449664908b529673b, type: 3}
+--- !u!1 &8898481706752970145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8300990469378546214, guid: cb95962c6f80abe449664908b529673b, type: 3}
+  m_PrefabInstance: {fileID: 598639201606735751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8898481706752970147 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8300990469378546212, guid: cb95962c6f80abe449664908b529673b, type: 3}
+  m_PrefabInstance: {fileID: 598639201606735751}
+  m_PrefabAsset: {fileID: 0}
