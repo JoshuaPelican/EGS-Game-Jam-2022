@@ -3,10 +3,16 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
+    [Header("Level Settings")]
+    [SerializeField] float StartingScale = 1f;
+    [SerializeField] float[] SizeThresholds = new float[6];
+    [SerializeField][Range(0, 1)] float DestroyedPercentRequired = 0.95f;
+
+    [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
     [SerializeField] IntVariable TimerVariable;
-    [SerializeField] [Range(0, 1)] float DestroyedPercentRequired = 0.95f;
 
+    [Header("Object References")]
     [SerializeField] GameObject TornadoPrefab;
     [SerializeField] GameObject MenuCam;
     [SerializeField] GameObject EndPanel;
@@ -34,6 +40,9 @@ public class LevelManager : MonoBehaviour
 
         Time.timeScale = 1;
         tornado = Instantiate(TornadoPrefab, transform.position, Quaternion.identity, transform);
+        //Sets the base scale of the tornado using the starting scale
+        tornado.GetComponentInChildren<TornadoScaling>().SetBaseSize(StartingScale);
+
         MenuCam.SetActive(false);
     }
 

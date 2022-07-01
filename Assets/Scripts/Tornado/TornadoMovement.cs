@@ -7,15 +7,16 @@ public class TornadoMovement : MonoBehaviour
     [SerializeField] float MaxVelocity = 10f;
     [SerializeField][Range(0, 1)] float Friction = 0.05f;
 
+    [Header("Variables")]
+    [SerializeField] FloatVariable TornadoSize;
+
     CharacterController controller;
-    Rigidbody rig;
 
     Vector3 velocity;
 
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
-        rig = GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -46,7 +47,7 @@ public class TornadoMovement : MonoBehaviour
             velocity *= Friction;
         }
 
-        Vector3 movement = transform.localScale.x * Time.deltaTime * velocity + (Physics.gravity * Time.deltaTime);
+        Vector3 movement = TornadoSize.Value * Time.deltaTime * velocity + (Physics.gravity * Time.deltaTime);
 
         //Move the tornado according to movement
         controller.Move(movement);

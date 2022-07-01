@@ -14,7 +14,16 @@ public class VariableDisplay : MonoBehaviour
     private void Awake()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
-        Variable.OnValueChanged += SetText;
+    }
+
+    private void OnEnable()
+    {
+        Variable.OnValueChanged.AddListener(SetText);
+    }
+
+    private void OnDisable()
+    {
+        Variable.OnValueChanged.RemoveListener(SetText);
     }
 
     void SetText()

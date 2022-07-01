@@ -9,13 +9,11 @@ public class TornadoForce : MonoBehaviour
     [SerializeField] float UpForce = 30;
     [SerializeField] float ForceGrowthFactor = 1.1f;
 
-    [Header("Size Settings")]
-    [SerializeField] IntVariable ScoreVariable;
-    [SerializeField] float SizeGrowthFactor = 0.1f;
-
-    float Size { get { return (Mathf.Sqrt((ScoreVariable.Value * SizeGrowthFactor) / 1000f)) + 1; } }
+    [Header("Variables")]
+    [SerializeField] FloatVariable TornadoSize;
 
     List<PhysicsObject> objectsInRange = new List<PhysicsObject>();
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,9 +24,6 @@ public class TornadoForce : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Scale size over time
-        transform.parent.localScale = Vector3.Lerp(transform.localScale, Vector3.one * Size, 0.1f);
-
         //Affect objects in the list
         foreach (PhysicsObject obj in objectsInRange)
             ApplyPhysics(obj);
@@ -45,9 +40,7 @@ public class TornadoForce : MonoBehaviour
     void ApplyPhysics(PhysicsObject obj)
     {
         if (!obj)
-        {
             return;
-        }
 
         //If object is destroyed then apply force to it
         if (obj.IsDestroyed)
@@ -61,7 +54,7 @@ public class TornadoForce : MonoBehaviour
             float distanceToTornado = Vector3.Distance(transform.position, obj.transform.position);
 
             //Force proportional to object distance and tonado size
-            float forceFactor = Mathf.Pow((distanceToTornado / transform.localScale.magnitude) * Size + obj.Size, ForceGrowthFactor);
+            float forceFactor = Mathf.Pow((distanceToTornado / transform.localScale.magnitude) * TornadoSize.Value + obj.Size, ForceGrowthFactor);
             Vector3 proportionalTornadoForce = Vector3.Slerp(Vector3.zero, tornadoForce, forceFactor);
 
             //Debug.Log("Force: " + proportionalTornadoForce);
@@ -70,7 +63,7 @@ public class TornadoForce : MonoBehaviour
         //Otherwise check if it needs to be destroyed this frame
         else
         {
-            obj.CheckDestruction(Size);
+            obj.CheckDestruction(TornadoSize.Value);
         }
     }
 }
