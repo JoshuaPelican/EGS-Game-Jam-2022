@@ -3,10 +3,7 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour
 {
-    [Header("Level Settings")]
-    [SerializeField] float StartingScale = 1f;
-    [SerializeField] float[] SizeThresholds = new float[6];
-    [SerializeField][Range(0, 1)] float DestroyedPercentRequired = 0.95f;
+    [SerializeField] LevelSettings LevelSettings;
 
     [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
@@ -40,17 +37,26 @@ public class LevelManager : MonoBehaviour
 
         Time.timeScale = 1;
         tornado = Instantiate(TornadoPrefab, transform.position, Quaternion.identity, transform);
-        //Sets the base scale of the tornado using the starting scale
-        tornado.GetComponentInChildren<TornadoScaling>().SetBaseSize(StartingScale);
+
+        InitializeTornado();
 
         MenuCam.SetActive(false);
+    }
+
+    void InitializeTornado()
+    {
+        TornadoScaling scaling = tornado.GetComponentInChildren<TornadoScaling>();
+
+        //Sets the base scale of the tornado using the starting scale
+        scaling.SetBaseSize(LevelSettings.StartingScale);
+        scaling.SetGrowthFactor(LevelSettings.SizeGrowthFactor);
     }
 
     void CheckEndGameConditions()
     {
         float totalDestroyed = PhysicsObject.TotalDestroyedObjects / PhysicsObject.TotalObjects;
 
-        if (TimerVariable.Value >= 0 && totalDestroyed < DestroyedPercentRequired)
+        if (TimerVariable.Value >= 0 && totalDestroyed < LevelSettings.DestroyedPercentCompletion)
             return;
 
         EndGame(totalDestroyed);

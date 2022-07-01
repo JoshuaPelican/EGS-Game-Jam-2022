@@ -95,15 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f85b3d8316b16bf41b73a46fd7dfd837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingScale: 0.25
-  SizeThresholds:
-  - 1
-  - 1.5
-  - 2
-  - 3
-  - 5
-  - 7.5
-  DestroyedPercentRequired: 1
+  LevelSettings: {fileID: 11400000, guid: 1d5594fc5766b6f4da7e5eb8a128d244, type: 2}
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   TimerVariable: {fileID: 11400000, guid: d6cf32ca82aa67f4e8bef4ca379ef7f4, type: 2}
   TornadoPrefab: {fileID: 2138838207886850864, guid: 2968d184e6f6f0140acc9599917d054c, type: 3}
