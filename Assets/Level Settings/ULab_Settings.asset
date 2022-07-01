@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4396755aa11f57040b3ac44e7d402ce1, type: 3}
   m_Name: ULab_Settings
   m_EditorClassIdentifier: 
-  StartingScale: 1
+  StartingScale: 0.1
   SizeThresholds:
   - 1
   - 1.5
