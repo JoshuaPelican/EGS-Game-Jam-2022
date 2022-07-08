@@ -4,6 +4,7 @@ using TMPro;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] LevelSettings LevelSettings;
+    [SerializeField] Transform StartPoint;
 
     [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
@@ -36,7 +37,7 @@ public class LevelManager : MonoBehaviour
         ScoreVariable.Value = 0;
 
         Time.timeScale = 1;
-        tornado = Instantiate(TornadoPrefab, transform.position, Quaternion.identity, transform);
+        tornado = Instantiate(TornadoPrefab, StartPoint.position, Quaternion.identity, transform);
 
         InitializeTornado();
 
