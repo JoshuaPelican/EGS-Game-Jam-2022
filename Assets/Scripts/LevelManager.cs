@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
         ScoreVariable.Value = 0;
 
         Time.timeScale = 1;
-        tornado = Instantiate(TornadoPrefab, StartPoint.position, Quaternion.identity, transform);
+        tornado = Instantiate(TornadoPrefab, StartPoint.position, StartPoint.rotation, transform);
 
         InitializeTornado();
 
