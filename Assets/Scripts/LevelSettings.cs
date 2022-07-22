@@ -15,4 +15,6 @@ public class LevelSettings : ScriptableObject
 
     [Header("Gameplay Settings")]
     [Range(0, 1)] public float DestroyedPercentCompletion = 0.95f;
+
+    public AnimationCurve GrowthCurve;
 }
