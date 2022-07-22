@@ -1,6 +1,15 @@
 using UnityEngine;
 using TMPro;
 
+public enum LevelState
+{
+    Menu,
+    Start,
+    Play,
+    Pause,
+    End
+}
+
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] LevelSettings LevelSettings;
@@ -18,21 +27,59 @@ public class LevelManager : MonoBehaviour
     [SerializeField] GameObject Score;
     [SerializeField] TextMeshProUGUI FinalStats;
 
-    bool gameOver;
     GameObject tornado;
+    LevelState currentLevelState;
+
 
     private void Awake()
+    {
+        ChangeLevelState(LevelState.Menu);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ChangeLevelState(currentLevelState == LevelState.Pause ? LevelState.Play : LevelState.Pause);
+        }
+    }
+
+    public void ChangeLevelState(LevelState levelState)
+    {
+        if(currentLevelState == LevelState.Pause)
+        {
+            //Unpause
+            OnPause(false);
+        }
+
+        currentLevelState = levelState;
+
+        switch (currentLevelState)
+        {
+            case LevelState.Menu:
+                OnMenu(); break;
+            case LevelState.Start:
+                OnStart(); break;
+            case LevelState.Play:
+                OnPlay(); break;
+            case LevelState.Pause:
+                OnPause(true); break;
+            case LevelState.End:
+                OnEnd(); break;
+        }
+    }
+
+    public void ChangeLevelState(int levelState)
+    {
+        ChangeLevelState((LevelState)levelState);
+    }
+
+    void OnMenu()
     {
         Time.timeScale = 0;
     }
 
-    private void FixedUpdate()
-    {
-        if(!gameOver)
-            CheckEndGameConditions();
-    }
-
-    public void StartGame()
+    void OnStart()
     {
         ScoreVariable.Value = 0;
 
@@ -44,6 +91,11 @@ public class LevelManager : MonoBehaviour
         MenuCam.SetActive(false);
     }
 
+    void OnPlay()
+    {
+        //
+    }
+
     void InitializeTornado()
     {
         TornadoScaling scaling = tornado.GetComponentInChildren<TornadoScaling>();
@@ -53,6 +105,26 @@ public class LevelManager : MonoBehaviour
         scaling.SetGrowthFactor(LevelSettings.SizeGrowthFactor);
     }
 
+    void OnPause(bool pause)
+    {
+        Time.timeScale = pause ? 0 : 1;
+    }
+
+    void OnEnd()
+    {
+        float totalDestroyed = PhysicsObject.TotalDestroyedObjects / PhysicsObject.TotalObjects;
+        Score.SetActive(false);
+        Timer.SetActive(false);
+        MenuCam.SetActive(true);
+
+        Destroy(tornado);
+
+        Time.timeScale = 0;
+        EndPanel.SetActive(true);
+        FinalStats.SetText($"Final Score\n{ScoreVariable.Value}\n\nTown Destroyed\n{Mathf.Round(totalDestroyed * 100)}%");
+    }
+
+    /*
     void CheckEndGameConditions()
     {
         float totalDestroyed = PhysicsObject.TotalDestroyedObjects / PhysicsObject.TotalObjects;
@@ -62,17 +134,5 @@ public class LevelManager : MonoBehaviour
 
         EndGame(totalDestroyed);
     }
-
-    void EndGame(float totalDestroyed)
-    {
-        Score.SetActive(false);
-        Timer.SetActive(false);
-        gameOver = true;
-        MenuCam.SetActive(true);
-        Destroy(tornado);
-        Debug.Log("Game Over!");
-        Time.timeScale = 0;
-        EndPanel.SetActive(true);
-        FinalStats.SetText($"Final Score\n{ScoreVariable.Value}\n\nTown Destroyed\n{Mathf.Round(totalDestroyed * 100)}%");
-    }
+    */
 }

@@ -385,10 +385,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3358159152839747628}
-    - target: {fileID: 3797404663248501240, guid: b3f43960a0706694f8c44cd2d86b18f6, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 9123946150609066113, guid: b3f43960a0706694f8c44cd2d86b18f6, type: 3}
       propertyPath: m_Pivot.x
       value: 0

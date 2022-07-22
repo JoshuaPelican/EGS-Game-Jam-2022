@@ -52,7 +52,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177750}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -116,10 +116,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScoreVariable: {fileID: 11400000, guid: cc2ea3e408c28b3448cf2e541f7e2a97, type: 2}
   IsDestroyed: 0
+  OnObjectDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
   SizeModifier: 1
   StartStatic: 1
   TimeToSleep: 3
   DestroyedPrefab: {fileID: 0}
+  OnObjectSleep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &7330557358849415052
 MeshCollider:
   m_ObjectHideFlags: 0

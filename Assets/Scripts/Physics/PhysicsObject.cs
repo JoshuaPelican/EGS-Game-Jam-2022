@@ -7,36 +7,41 @@ public class PhysicsObject : MonoBehaviour
     [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
 
+    Mesh mesh;
+    Rigidbody rig;
+    new Renderer renderer;
+
     public bool IsDestroyed = false;
     public UnityEvent OnObjectDestroyed;
-
-    float size;
-    public float Size { get { return size; } }
 
     [Header("Object Settings")]
     [SerializeField] float SizeModifier = 1f;
     [SerializeField] bool StartStatic = true;
+
+    [Header("Sleep Settings")]
     [SerializeField] float TimeToSleep = 3f;
-
-    [Header("Destruction Settings")]
-    [SerializeField] GameObject DestroyedPrefab;
-      
-    int scoreValue;
-    
-    Mesh mesh;
-    Rigidbody rig;
-
-    public static float TotalObjects = 0;
-    public static float TotalDestroyedObjects = 0;
-
     float sleepTimer = 0;
     bool sleeping;
     public UnityEvent OnObjectSleep;
+
+    [Header("Destruction Settings")]
+    [SerializeField] GameObject DestroyedPrefab; 
+    int scoreValue;
+  
+    float size;
+    public float Size { get { return size; } }
+
+
+    //Static Variables
+    public static float TotalObjects = 0;
+    public static float TotalDestroyedObjects = 0;
+
 
     private void Awake()
     {
         mesh = GetComponent<MeshFilter>().mesh;
         rig = GetComponent<Rigidbody>();
+        renderer = GetComponent<Renderer>();
 
         Initialize();
     }
@@ -45,24 +50,25 @@ public class PhysicsObject : MonoBehaviour
     {
         if (sleeping || !IsDestroyed)
             return;
-        if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
-            return;
-
-        sleepTimer += Time.deltaTime;
-        if(sleepTimer >= TimeToSleep)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            sleeping = true;
-            sleepTimer = 0;
-            Sleep();
+            sleepTimer += Time.deltaTime;
+            if (sleepTimer >= TimeToSleep)
+            {
+                sleepTimer = 0;
+                Sleep();
+            }
         }
     }
 
+    /*
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.layer != LayerMask.NameToLayer("Ground"))
             return;
         sleepTimer = 0;
     }
+    */
 
     void Initialize()
     {
@@ -81,7 +87,7 @@ public class PhysicsObject : MonoBehaviour
     {
         float scaledSize = otherSize * otherSize;
 
-        Debug.Log(scaledSize + " : " + Size);
+        //Debug.Log(scaledSize + " : " + Size);
 
         if(scaledSize >= Size)
         {
@@ -109,6 +115,7 @@ public class PhysicsObject : MonoBehaviour
             IsDestroyed = true;
             rig.isKinematic = false;
         }
+        renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
 
         TotalDestroyedObjects++;
         ScoreVariable.Value += scoreValue;
@@ -117,8 +124,11 @@ public class PhysicsObject : MonoBehaviour
 
     void Sleep()
     {
-        OnObjectSleep?.Invoke();
-        rig.Sleep();
         gameObject.isStatic = true;
+        renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+        rig.Sleep();
+
+        sleeping = true;
+        OnObjectSleep?.Invoke();
     }
 }
