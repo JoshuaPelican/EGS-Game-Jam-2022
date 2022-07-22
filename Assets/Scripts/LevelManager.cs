@@ -13,19 +13,25 @@ public enum LevelState
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] LevelSettings LevelSettings;
+    [Space]
     [SerializeField] Transform StartPoint;
 
     [Header("Variable References")]
     [SerializeField] IntVariable ScoreVariable;
     [SerializeField] IntVariable TimerVariable;
 
-    [Header("Object References")]
-    [SerializeField] GameObject TornadoPrefab;
+    [Header("Menu References")]
     [SerializeField] GameObject MenuCam;
     [SerializeField] GameObject EndPanel;
+    [SerializeField] GameObject PausePanel;
+
+    [Header("Variable Displays")]
     [SerializeField] GameObject Timer;
     [SerializeField] GameObject Score;
     [SerializeField] TextMeshProUGUI FinalStats;
+
+    [Header("Tornado")]
+    [SerializeField] GameObject TornadoPrefab;
 
     GameObject tornado;
     LevelState currentLevelState;
@@ -38,7 +44,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             ChangeLevelState(currentLevelState == LevelState.Pause ? LevelState.Play : LevelState.Pause);
         }
@@ -108,6 +114,7 @@ public class LevelManager : MonoBehaviour
     void OnPause(bool pause)
     {
         Time.timeScale = pause ? 0 : 1;
+        PausePanel.SetActive(pause);
     }
 
     void OnEnd()

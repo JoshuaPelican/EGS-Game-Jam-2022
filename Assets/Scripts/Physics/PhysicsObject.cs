@@ -97,6 +97,9 @@ public class PhysicsObject : MonoBehaviour
 
     public void AddForce(Vector3 forceToAdd)
     {       
+        //if (renderer.shadowCastingMode == UnityEngine.Rendering.ShadowCastingMode.Off)
+        //    renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
+
         rig.AddForce(forceToAdd / Mathf.Sqrt(Mathf.Sqrt(Size)), ForceMode.Force);
     }
 
